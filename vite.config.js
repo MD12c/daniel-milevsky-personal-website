@@ -9,8 +9,8 @@ export default defineConfig({
       babel: {
         plugins: [['babel-plugin-react-compiler']],
       },
-      base: "/daniel-milevsky-personal-website"
     }),
     tailwindcss(),
   ],
+  base: "/daniel-milevsky-personal-website"
 })

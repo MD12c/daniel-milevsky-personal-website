@@ -1,27 +1,29 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 export default function Navigation() {
+	
 	const NavContent = [
 		{ name: ["About me"], link: "#AboutMe" },
 		{ name: ["Projects"], link: "#Projects" },
-		{ name: ["What is", <br key="br" />, "to come"], link: "#WhatIsToCome" }
+		{ name: ["What's next"], link: "#WhatIsToCome" },
+		{ name: ["Gallery"], link: "#Gallery" }
 	];
-	const cardStyle =`flex flex-col justify-center items-center w-40 h-50 rounded-2xl bg-gray-400/40 pb-5 shadow-xl cursor-pointer 
-					border-gray-300 overflow-hidden hover:bg-gray-400/25 active:shadow-inner`; 
+	const cardStyle =`flex flex-col justify-center items-center mt-5  mx-2 h-20 rounded-2xl bg-[#bac0ca] pb-5 shadow-5sm sm:shadow-xl cursor-pointer 
+					border-gray-300 overflow-hidden hover:bg-[#c5cad3] active:shadow-inner`; 
 	const textStyle = "text-center font-oxanium text-2xl";
 
 	const [hover, setHover] = useState(null);
 	return (
-		<div>
-			<div className="mt-10 mx-3 flex justify-between md:justify-evenly">
+
+		<div className="overflow-hidden pb-10">
+			<div className="navigationAppearence mt-4 flex flex-col mx-3 lg:flex-row lg:justify-evenly">
 				{NavContent.map((item, i) => (
 					<a key={i} href={item.link}>
 						<div className={cardStyle} 
-						onMouseEnter={() => setHover(i)} 
-						onMouseLeave={() => setHover(null)}>
-							
-							<div className={`translate-x-20 translate-y-0 w-60 h-4 bg-orange-400 rotate-45
+							onMouseEnter={() => setHover(i)} 
+							onMouseLeave={() => setHover(null)}>
+							<div className={`lg:translate-x-25 md:translate-y-0 w-60 h-4 bg-orange-400 rotate-45 translate-x-45
 								${hover === i ? "ribbonAppearance" : "ribbonDisappearance"}`} />
-							<div className={`translate-x-20 translate-y-0 w-70 h-2 bg-gray-500 rotate-45
+							<div className={`lg:translate-x-25 md:translate-y-0 w-70 h-2 bg-gray-500 rotate-45 translate-x-40
 								${hover === i ? "ribbonAppearance" : "ribbonDisappearance"}`} />
 							<h2 className={textStyle}>{item.name}</h2>
 						</div>

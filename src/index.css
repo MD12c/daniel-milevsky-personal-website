@@ -23,6 +23,7 @@
     transform: translateX(100%);
   }
 }
+
 .ribbonBase {
   transform: translateX(-100%); /* hidden off-screen */
 }
@@ -41,5 +42,52 @@
   animation-timing-function:ease;
   animation-delay: 0ms;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navigationAppearence{
+  0%{
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  80%{
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.navigationAppearence{
+  animation: navigationAppearence;
+  animation-duration: 2300ms;
+  animation-delay: 0ms;
+  animation-timing-function:ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fastPulse{
+  0%{
+    opacity: 100%;
+  }
+  50%{
+  opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+.fastPulse{
+  animation: fastPulse;
+  animation-duration: 900ms;
+  animation-timing-function:cubic-bezier(0.075, 1, 0.075, 1);
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }

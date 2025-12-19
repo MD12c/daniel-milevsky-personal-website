@@ -1,18 +1,22 @@
 import { useState } from 'react'
-import Navigation from './components/navigation.jsx'
-import AboutMe from './components/aboutMe.jsx'
-import Projects from './components/projects.jsx'
-import ContactMe from './components/contactMe.jsx'
+import Navigation from './components/Navigation.jsx'
+import AboutMe from './components/AboutMe.jsx'
+import Projects from './components/Projects.jsx'
+import ContactMe from './components/ContactMe.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
+import WhatIsToCome from './components/WhatIsToCome.jsx'
 
 function App() {
   return (
-    <div className="min-h-screen flex bg-gray-300 overflow-hidden flex-col">
+    <div className="min-h-screen flex bg-gray-300 flex-col">
+      <div className="mt-[40vh]">
         <Header />
         <Navigation />
+      </div>
         <AboutMe />
         <Projects />
+        <WhatIsToCome />
         <ContactMe />
         <Footer />
     </div>

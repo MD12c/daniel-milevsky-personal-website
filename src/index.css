@@ -6,3 +6,40 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@keyframes ribbonAppearance {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes ribbonDisappearance {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+.ribbonBase {
+  transform: translateX(-100%); /* hidden off-screen */
+}
+
+.ribbonAppearance{
+  animation: ribbonAppearance;
+  animation-duration: 350ms;
+  animation-timing-function: ease;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.ribbonDisappearance{
+  animation: ribbonDisappearance;
+  animation-duration: 350ms;
+  animation-timing-function:ease;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

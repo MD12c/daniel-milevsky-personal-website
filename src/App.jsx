@@ -7,12 +7,14 @@ import ContactMe from './components/ContactMe.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import WhatIsToCome from './components/WhatIsToCome.jsx'
+import BgDecorations from './components/BgDecorations.jsx'
 
 function AppContent() {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`flex flex-col h-screen w-full bg-cover bg-center ${darkMode ? "bg-green" : "bg-[url('/Orange-landscape.jpg')]"}`}>
-      <div className="mt-[40vh] xl:mx-40">
+    <div className={`relative z-0 flex flex-col h-screen w-full bg-cover bg-center ${darkMode ? "bg-green bg-[url('/Orange-landscape.jpg')]" : "bg-[url('/Orange-landscape.jpg')]"}`}>
+      <BgDecorations className="absolute z-10" />
+      <div className="relative mt-[40vh] xl2:mx-40">
         <Header />
         <Navigation />
       </div>

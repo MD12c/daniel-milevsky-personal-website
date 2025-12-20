@@ -52,11 +52,11 @@
     opacity: 0;
     transform: translateY(-200px);
   }
-  80%{
+  60%{
     opacity: 0;
     transform: translateY(-200px);
   }
-  90%{
+  60%{
     opacity: 0;
   }
   100%{
@@ -66,7 +66,7 @@
 }
 .navigationAppearence{
   animation: navigationAppearence;
-  animation-duration: 2300ms;
+  animation-duration: 3000ms;
   animation-delay: 0ms;
   animation-timing-function:ease;
   animation-iteration-count: 1;
@@ -159,9 +159,9 @@
 
 /*custom color pallet*/
 @theme {
-  --color-ltOrange: var(--color-orange-400);
-  --color-dfOrange: var(--color-orange-500);
-  --color-drOrange: var(--color-orange-600);
+  --color-ltOrange: var(--color-orange-500);
+  --color-dfOrange: var(--color-amber-700);
+  --color-drOrange: var(--color-orange-700);
   
   --color-lt2Gray: var(--color-gray-200);
   --color-ltGray: var(--color-gray-300);
@@ -169,13 +169,13 @@
   --color-drGray: var(--color-gray-500);
   --color-navTab: #bac0ca;
 
-  --color-ltGreen: var(--color-teal-500);
-  --color-dfGreen: var(--color-teal-600);
+  --color-ltGreen: var(--color-teal-300);
+  --color-dfGreen: var(--color-teal-500);
   --color-drGreen: var(--color-teal-700);
   --color-dr2Green: var(--color-teal-800);
 
   --color-lt2Slate: var(--color-slate-600);
-  --color-ltSlate: var(--color-slate-700);
+  --color-ltSlate: var(--color-teal-950);
   --color-dfSlate: var(--color-slate-800);
   --color-drSlate: var(--color-slate-900);
   --color-dr2Slate: var(--color-slate-950);

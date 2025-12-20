@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         oxanium: ["Oxanium", "sans-serif"],
       },
+      screens: {
+        '3xl': '1920px',
+      },
     },
   },
   plugins: [],

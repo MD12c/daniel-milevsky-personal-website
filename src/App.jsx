@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { DarkModeProvider, DarkModeContext } from './context/DarkModeContext'
 import Navigation from './components/Navigation.jsx'
 import AboutMe from './components/AboutMe.jsx'
 import Projects from './components/Projects.jsx'
@@ -7,10 +8,11 @@ import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import WhatIsToCome from './components/WhatIsToCome.jsx'
 
-function App() {
+function AppContent() {
+  const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className="min-h-screen flex bg-ltGray flex-col">
-      <div className="mt-[40vh]">
+    <div className={`flex flex-col h-screen w-full bg-cover bg-center ${darkMode ? "bg-green" : "bg-[url('/Orange-landscape.jpg')]"}`}>
+      <div className="mt-[40vh] xl:mx-40">
         <Header />
         <Navigation />
       </div>
@@ -20,6 +22,14 @@ function App() {
         <ContactMe />
         <Footer />
     </div>
+  )
+}
+
+function App() {
+  return (
+    <DarkModeProvider>
+      <AppContent />
+    </DarkModeProvider>
   )
 }
 

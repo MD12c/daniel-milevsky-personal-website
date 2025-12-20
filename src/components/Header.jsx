@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { DarkModeContext } from "../context/DarkModeContext";
 export default function Header() {
   const iconStyle = "transition text-3xl cursor-pointer";
+  const { darkMode, setDarkMode } = useContext(DarkModeContext);
 
   //   return (
   //     <div className="flex justify-between items-center mt-3 py-4 rounded-xl mx-40 border-gray-600 shadow bg-gray-200">
@@ -28,12 +30,10 @@ export default function Header() {
     }
   }, [index, letters]);
 
-  const [darkMode, setDarkMode] = useState(false);
-
   return (
     <div className={`flex mx-3 z-50 justify-between items-center py-4 
                     rounded-xl md:mx-40 sm:m-3 
-                    ${darkMode ? "bg-drSlate" : "shadow bg-lt2Gray"}`}>
+                    ${darkMode ? "bg-ltSlate" : "shadow bg-lt2Gray"}`}>
       <div className="flex flex-row">
         <h1 className={`pl-3 text-4xl font-oxanium font-bold
                       ${darkMode ? "text-dfGreen" : "text-black"}`}>{content}</h1>
@@ -46,8 +46,7 @@ export default function Header() {
              onClick={() => setDarkMode((prev) => !prev)}>
           <div className={`${darkMode ? "darkModeToggle" : "lightModeToggle"} flex flex-row`}>
             <i className={`${iconStyle} translate-x-0 fa-solid fa-sun mr-2 text-dfOrange hover:text-ltOrange `} />
-            <i class={`${iconStyle} translate-x-0 fa-solid fa-moon 
-                       ${darkMode ? "text-dfGreen hover:text-ltGreen" : "text-dfOrange hover:text-orange-300"}`} />
+            <i className={`${iconStyle} translate-x-0 fa-solid fa-moon text-dfGreen hover:text-ltGreen`} />
           </div>
           <div className="absolute mt-10 hidden group-hover:block -translate-x-8 font-oxanium
                           px-3 py-1 text-sm rounded bg-drGray text-white shadow-lg select-none">Dark/Light</div>

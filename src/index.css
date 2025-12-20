@@ -129,6 +129,35 @@
   animation-fill-mode: forwards;
 }
 
+
+
+@keyframes imageFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.imageFadeIn {
+  animation: imageFadeIn 600ms ease-in-out forwards;
+}
+
+.bg-orange {
+  background-image: url("/Orange-landscape.jpg");
+}
+
+.bg-green {
+  background-image: url("/Green-landscape.jpg");
+}
+.bg-orange-base {
+  background-image: url("/Orange-landscape.jpg");
+}
+
+
+
+/*custom color pallet*/
 @theme {
   --color-ltOrange: var(--color-orange-400);
   --color-dfOrange: var(--color-orange-500);
@@ -150,4 +179,9 @@
   --color-dfSlate: var(--color-slate-800);
   --color-drSlate: var(--color-slate-900);
   --color-dr2Slate: var(--color-slate-950);
+}
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 270ms;
 }

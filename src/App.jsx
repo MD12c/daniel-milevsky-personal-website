@@ -9,7 +9,7 @@ import WhatIsToCome from './components/WhatIsToCome.jsx'
 
 function App() {
   return (
-    <div className="min-h-screen flex bg-gray-300 flex-col">
+    <div className="min-h-screen flex bg-ltGray flex-col">
       <div className="mt-[40vh]">
         <Header />
         <Navigation />

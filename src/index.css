@@ -7,6 +7,8 @@
   font-style: normal;
 }
 
+
+
 @keyframes ribbonAppearance {
   0%{
     transform: translateX(-100%);
@@ -23,11 +25,9 @@
     transform: translateX(100%);
   }
 }
-
 .ribbonBase {
   transform: translateX(-100%); /* hidden off-screen */
 }
-
 .ribbonAppearance{
   animation: ribbonAppearance;
   animation-duration: 350ms;
@@ -44,6 +44,8 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
+
 
 @keyframes navigationAppearence{
   0%{
@@ -62,7 +64,6 @@
     transform: translateX(0px);
   }
 }
-
 .navigationAppearence{
   animation: navigationAppearence;
   animation-duration: 2300ms;
@@ -71,6 +72,43 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
+
+
+@keyframes darkModeToggle {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-37px);
+  }
+}
+@keyframes lightModeToggle {
+  0%{
+    transform: translateX(-37px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+.darkModeToggle {
+  animation: darkModeToggle;
+  animation-duration: 100ms;
+  animation-delay: 0ms;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.lightModeToggle {
+  animation: lightModeToggle;
+  animation-duration: 100ms;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
 
 @keyframes fastPulse{
   0%{
@@ -83,11 +121,33 @@
     opacity: 100%;
   }
 }
-
 .fastPulse{
   animation: fastPulse;
   animation-duration: 900ms;
   animation-timing-function:cubic-bezier(0.075, 1, 0.075, 1);
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
+}
+
+@theme {
+  --color-ltOrange: var(--color-orange-400);
+  --color-dfOrange: var(--color-orange-500);
+  --color-drOrange: var(--color-orange-600);
+  
+  --color-lt2Gray: var(--color-gray-200);
+  --color-ltGray: var(--color-gray-300);
+  --color-dfGray: var(--color-gray-400);
+  --color-drGray: var(--color-gray-500);
+  --color-navTab: #bac0ca;
+
+  --color-ltGreen: var(--color-teal-500);
+  --color-dfGreen: var(--color-teal-600);
+  --color-drGreen: var(--color-teal-700);
+  --color-dr2Green: var(--color-teal-800);
+
+  --color-lt2Slate: var(--color-slate-600);
+  --color-ltSlate: var(--color-slate-700);
+  --color-dfSlate: var(--color-slate-800);
+  --color-drSlate: var(--color-slate-900);
+  --color-dr2Slate: var(--color-slate-950);
 }

@@ -15,15 +15,15 @@ export default function Navigation() {
 	return (
 
 		<div className="overflow-hidden pb-10">
-			<div className="navigationAppearence mt-4 flex flex-col mx-3 lg:flex-row lg:justify-evenly">
+			<div className="navigationAppearence mt-4 mx-3 flex flex-col md:flex-row md:flex-wrap md:justify-evenly">
 				{NavContent.map((item, i) => (
 					<a key={i} href={item.link}>
 						<div className={cardStyle} 
 							onMouseEnter={() => setHover(i)} 
 							onMouseLeave={() => setHover(null)}>
-							<div className={`lg:translate-x-25 md:translate-y-0 w-60 h-4 bg-orange-400 rotate-45 translate-x-45
+							<div className={`lg:translate-x-25 md:translate-y-0 w-60 h-4 bg-dfOrange rotate-45 translate-x-45
 								${hover === i ? "ribbonAppearance" : "ribbonDisappearance"}`} />
-							<div className={`lg:translate-x-25 md:translate-y-0 w-70 h-2 bg-gray-500 rotate-45 translate-x-40
+							<div className={`lg:translate-x-25 md:translate-y-0 w-60 h-2 bg-drGray rotate-45 translate-x-40
 								${hover === i ? "ribbonAppearance" : "ribbonDisappearance"}`} />
 							<h2 className={textStyle}>{item.name}</h2>
 						</div>

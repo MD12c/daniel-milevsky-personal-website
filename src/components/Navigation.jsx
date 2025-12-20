@@ -21,10 +21,10 @@ export default function Navigation() {
 						<div className={cardStyle + `${darkMode ? "hover:bg-ltSlate/90 bg-ltSlate/50" : "hover:bg-[#dadfe8] bg-navTab/70"}`}
 							onMouseEnter={() => setHover(i)} 
 							onMouseLeave={() => setHover(null)}>
-							<div className={`lg:translate-x-25 lg:translate-y-0 w-60 h-4 rotate-45 translate-x-45
+							<div className={`md:translate-x-25 w-60 h-4 rotate-45 translate-x-45
 											${darkMode ? "bg-ltGreen" : "bg-dfOrange"}
 											${hover === i ? "ribbonAppearance" : "ribbonDisappearance"}`} />
-							<div className={`lg:translate-x-25 lg:translate-y-0 w-60 h-2 bg-drGray rotate-45 translate-x-40
+							<div className={`md:translate-x-25 w-60 h-2 bg-drGray rotate-45 translate-x-40
 											${hover === i ? "ribbonAppearance" : "ribbonDisappearance"}
 											${darkMode ? "bg-slate-950" : "bg-drGray"}`} />
 							<h2 className={textStyle + `${darkMode ? "text-ltGreen" : "text-black"}`}>{item.name}</h2>

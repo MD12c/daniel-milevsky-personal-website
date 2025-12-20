@@ -75,6 +75,66 @@
 
 
 
+@keyframes darkBallAppearence{
+  0%{
+    transform: translateX(calc(-100vw - 5rem));
+  }
+  40%{
+    transform: translateX(calc(-100vw - 5rem));
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+.darkBallAppearence{
+  animation: darkBallAppearence;
+  animation-duration: 3000ms;
+  animation-delay: 0ms;
+  animation-timing-function:ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes lightBallAppearence{
+  0%{
+    transform: translateX(calc(100vw + 5rem));
+  }
+  40%{
+    transform: translateX(calc(100vw + 5rem));
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+.lightBallAppearence{
+  animation: lightBallAppearence;
+  animation-duration: 3000ms;
+  animation-delay: 0ms;
+  animation-timing-function:ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes circleAppearence{
+  0%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.circleAppearence{
+  animation: circleAppearence;
+  animation-duration: 3000ms;
+  animation-delay: 0ms;
+  animation-timing-function:ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+
 @keyframes darkModeToggle {
   0%{
     transform: translateX(0px);
@@ -139,21 +199,19 @@
     opacity: 1;
   }
 }
-
 .imageFadeIn {
   animation: imageFadeIn 600ms ease-in-out forwards;
 }
-
-.bg-orange {
+.bg-orangeIn {
+  animation: imageFadeIn 600ms ease forwards;
   background-image: url("/Orange-landscape.jpg");
 }
 
-.bg-green {
+.bg-greenIn {
+  animation: imageFadeIn 600ms ease forwards;
   background-image: url("/Green-landscape.jpg");
 }
-.bg-orange-base {
-  background-image: url("/Orange-landscape.jpg");
-}
+
 
 
 

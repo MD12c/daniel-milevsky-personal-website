@@ -12,17 +12,22 @@ import BgDecorations from './components/BgDecorations.jsx'
 function AppContent() {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`relative z-0 flex flex-col h-screen w-full bg-cover bg-center ${darkMode ? "bg-green bg-[url('/Orange-landscape.jpg')]" : "bg-[url('/Orange-landscape.jpg')]"}`}>
-      <BgDecorations className="absolute z-10" />
-      <div className="relative mt-[40vh] xl2:mx-40">
-        <Header />
-        <Navigation />
+    <div className="absolute inset-0 bg-[url('/Orange-landscape.jpg')] bg-cover bg-center z-0">
+      <div className={`absolute inset-0 bg-[url('/Green-landscape.jpg')] bg-cover bg-center z-0
+      transition-opacity duration-1000 ease-in-out pointer-events-none 
+      ${darkMode ? "opacity-100" : "opacity-0"}`}>
       </div>
-        <AboutMe />
-        <Projects />
-        <WhatIsToCome />
-        <ContactMe />
-        <Footer />
+        <BgDecorations className="absolute z-10 pointer-events-none" />
+        <div className="absolute inset-0 mt-[40vh] xl2:mx-40 z-20">
+          <Header />
+          <Navigation />
+        </div>
+          <AboutMe />
+          <Projects />
+          <WhatIsToCome />
+          <ContactMe />
+          <Footer />
+      
     </div>
   )
 }

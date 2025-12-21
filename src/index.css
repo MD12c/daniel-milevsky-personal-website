@@ -66,11 +66,19 @@
 }
 .navigationAppearence{
   animation: navigationAppearence;
-  animation-duration: 2000ms;
+  animation-duration: 3000ms;
   animation-delay: 0ms;
   animation-timing-function:ease;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+.navigationUp {
+  transform: translateY(-50vh);
+  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
+}
+.navigationDown {
+  transform: translateY(0px);
+  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
 }
 
 
@@ -88,7 +96,7 @@
 }
 .darkBallAppearence{
   animation: darkBallAppearence;
-  animation-duration: 2000ms;
+  animation-duration: 3000ms;
   animation-delay: 0ms;
   animation-timing-function:ease;
   animation-iteration-count: 1;
@@ -107,7 +115,7 @@
 }
 .lightBallAppearence{
   animation: lightBallAppearence;
-  animation-duration: 2000ms;
+  animation-duration: 3000ms;
   animation-delay: 0ms;
   animation-timing-function:ease;
   animation-iteration-count: 1;
@@ -126,7 +134,7 @@
 }
 .circleAppearence{
   animation: circleAppearence;
-  animation-duration: 2000ms;
+  animation-duration: 3000ms;
   animation-delay: 0ms;
   animation-timing-function:ease-in;
   animation-iteration-count: 1;
@@ -212,38 +220,35 @@
 }
 
 
-@keyframes TabIn {
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
+
+.TabBlurIn {
+  opacity: 1;
+  transition: opacity 0.4s ease-in;
+}
+.TabBlurOut {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
 }
 .TabIn {
-  animation: TabIn;
-  animation-duration: 400ms;
-  animation-delay: 0ms;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-@keyframes TabOut {
-  0%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
+  transform: translateY(0px);
+  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
 }
 .TabOut {
-  animation: TabOut;
-  animation-duration: 400ms;
-  animation-delay: 0ms;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  transform: translateY(100vh);
+  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
 }
+
+
+.moveHeaderUp {
+  transform: translateY(25px);
+  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
+}
+.moveHeaderDown {
+  transform: translateY(40vh);
+  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
+}
+
+
 
 /*custom color pallet*/
 @theme {

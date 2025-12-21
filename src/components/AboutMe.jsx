@@ -11,13 +11,30 @@ export default function AboutMe() {
 
     
     return (
-        <div className="absolute w-full h-full overflow-hidden">
-            <div className={`absolute w-full h-full backdrop-blur-sm flex justify-center
-                            ${TabMode === "#AboutMe" ? 
-                            "TabIn" : TabMode === "Home" ? 
-                            "TabOut pointer-events-none" : "pointer-events-none translate-[100vh]"}`}>
-                <div className={`sm:w-[75vw] w-full h-[90vh] mt-20 rounded-2xl ${darkMode ? "bg-drSlate/80" : "bg-dfGray/80"}`}>
-
+        <div className="absolute z-0 w-full h-full overflow-hidden flex justify-center">
+            <div className={`absolute w-full h-full backdrop-blur-sm 
+                            ${TabMode === "#AboutMe" ? "TabBlurIn" : "TabBlurOut"}`}>
+            </div>
+            <div className={`z-20 sm:w-[90vw] w-full h-[90vh] mt-3 rounded-2xl 
+                            ${darkMode ? "bg-drSlate/80" : "bg-dfGray/80"}
+                            ${TabMode === "#AboutMe" ? "TabIn" : "TabOut"}`}>
+                <div className="pt-[10vh] px-4">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
+                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
+                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
+                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
+                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
+                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
+                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
+                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
+                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
                 </div>
             </div>
         </div>

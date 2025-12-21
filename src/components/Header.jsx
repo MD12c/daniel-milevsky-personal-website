@@ -16,7 +16,7 @@ export default function Header() {
       const timeout = setTimeout(() => {
         setContent((prev) => prev + letters[index]);
         setIndex(index + 1);
-      }, 70);
+      }, 100);
       return () => clearTimeout(timeout);
     }
   }, [index, letters]);
@@ -48,7 +48,7 @@ export default function Header() {
         <i
           className={`${iconStyle} mx-8  mr-5 group fa-solid fa-house 
                       ${darkMode ? "text-dfGreen hover:text-ltGreen" : "text-dfOrange hover:text-ltOrange "}`}
-          onClick={() => {window.location.reload()}}
+          onClick={() => setTabMode("Home")}
         >
           <div className={`absolute mt-2 hidden group-hover:block -translate-x-3.5 font-oxanium
                               px-3 py-1 text-sm rounded text-white shadow-lg select-none 

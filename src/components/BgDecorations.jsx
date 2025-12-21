@@ -14,14 +14,14 @@ export default function BgDecorations() {
                             ${darkMode ? "bg-dr2Green right-[5vw]" : "bg-amber-950/60 left-[5vw]"}
                             ${darkMode ? "lg:right-[15vw]" : "lg:left-[15vw]"}
                             ${darkMode ? "xl:right-[25vw]" : "xl:left-[25vw]"}
-                            ${darkMode ? "2xl:right-[40vw]" : "2xl:left-[30vw]"}
+                            ${darkMode ? "2xl:right-[30vw]" : "2xl:left-[30vw]"}
                             darkBallAppearence`} />
                               
             <div className={`absolute w-20 h-20 rounded-full bottom-[5vh] 
                             ${darkMode ? "bg-dfGreen left-[5vw]" : "bg-amber-500/60 right-[5vw]"} 
                             ${darkMode ? "lg:left-[15vw]" : "lg:right-[15vw]"} 
                             ${darkMode ? "xl:left-[25vw]" : "xl:right-[25vw]"} 
-                            ${darkMode ? "2xl:left-[40vw]" : "2xl:right-[30vw]"}
+                            ${darkMode ? "2xl:left-[30vw]" : "2xl:right-[30vw]"}
                             lightBallAppearence`} />
         </div>
     </div>

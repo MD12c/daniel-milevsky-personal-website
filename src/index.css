@@ -66,7 +66,7 @@
 }
 .navigationAppearence{
   animation: navigationAppearence;
-  animation-duration: 3000ms;
+  animation-duration: 2000ms;
   animation-delay: 0ms;
   animation-timing-function:ease;
   animation-iteration-count: 1;
@@ -88,7 +88,7 @@
 }
 .darkBallAppearence{
   animation: darkBallAppearence;
-  animation-duration: 3000ms;
+  animation-duration: 2000ms;
   animation-delay: 0ms;
   animation-timing-function:ease;
   animation-iteration-count: 1;
@@ -107,7 +107,7 @@
 }
 .lightBallAppearence{
   animation: lightBallAppearence;
-  animation-duration: 3000ms;
+  animation-duration: 2000ms;
   animation-delay: 0ms;
   animation-timing-function:ease;
   animation-iteration-count: 1;
@@ -126,7 +126,7 @@
 }
 .circleAppearence{
   animation: circleAppearence;
-  animation-duration: 3000ms;
+  animation-duration: 2000ms;
   animation-delay: 0ms;
   animation-timing-function:ease-in;
   animation-iteration-count: 1;
@@ -206,14 +206,44 @@
   animation: imageFadeIn 600ms ease forwards;
   background-image: url("/Orange-landscape.jpg");
 }
-
 .bg-greenIn {
   animation: imageFadeIn 600ms ease forwards;
   background-image: url("/Green-landscape.jpg");
 }
 
 
-
+@keyframes TabIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.TabIn {
+  animation: TabIn;
+  animation-duration: 400ms;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes TabOut {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.TabOut {
+  animation: TabOut;
+  animation-duration: 400ms;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
 /*custom color pallet*/
 @theme {

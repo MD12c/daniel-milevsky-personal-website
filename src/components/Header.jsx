@@ -1,8 +1,10 @@
 import { useState, useEffect, useContext } from "react";
 import { DarkModeContext } from "../context/DarkModeContext";
+import { TabContext } from "../context/TabContext";
+
 export default function Header() {
-  const iconStyle = "transition text-3xl cursor-pointer";
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
+  const { TabMode, setTabMode } = useContext(TabContext);
 
   const name = "Daniel Milevsky";
   const letters = name.split("");
@@ -14,13 +16,14 @@ export default function Header() {
       const timeout = setTimeout(() => {
         setContent((prev) => prev + letters[index]);
         setIndex(index + 1);
-      }, 100);
+      }, 70);
       return () => clearTimeout(timeout);
     }
   }, [index, letters]);
 
+  const iconStyle = "transition text-3xl cursor-pointer";
   return (
-    <div className={`flex mx-3 z-50 justify-between items-center py-4 
+    <div className={`flex mx-3 py-4 justify-between items-center
                     rounded-xl md:mx-40 sm:m-3 
                     ${darkMode ? "bg-ltSlate/80" : "shadow bg-lt2Gray/90"}`}>
       <div className="flex flex-row">
@@ -45,7 +48,7 @@ export default function Header() {
         <i
           className={`${iconStyle} mx-8  mr-5 group fa-solid fa-house 
                       ${darkMode ? "text-dfGreen hover:text-ltGreen" : "text-dfOrange hover:text-ltOrange "}`}
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={() => {window.location.reload()}}
         >
           <div className={`absolute mt-2 hidden group-hover:block -translate-x-3.5 font-oxanium
                               px-3 py-1 text-sm rounded text-white shadow-lg select-none 

@@ -23,10 +23,10 @@ function AppContent() {
       ${darkMode ? "opacity-100" : "opacity-0"}`}>
       </div>
         <BgDecorations className="absolute z-10 pointer-events-none" />
-        <div className={`absolute inset-0 z-20 w-screen h-60 
+        <div className={`absolute inset-0 z-20 w-screen h-150 overflow-hidden
                         ${(TabMode === "Home" || TabMode ==="none") ? "moveHeaderDown" : "moveHeaderUp"}`}>
           <Header className="" />
-          <Navigation className={`${(TabMode === "Home" || TabMode ==="none") ? "visible" : "hidden"}`} />
+          <Navigation className={``} />
         </div>
         <div className="w-screen h-screen overflow-hidden">
           <AboutMe className="absolute inset-0 z-10" />

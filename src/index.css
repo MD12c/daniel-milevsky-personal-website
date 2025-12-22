@@ -80,6 +80,25 @@
   transform: translateY(0px);
   transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
 }
+.navigationUpMobile {
+  transform: translateY(-90vh);
+  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
+}
+.navigationDownMobile {
+  transform: translateY(20vh);
+  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
+}
+
+
+.moveHeaderUp {
+  transform: translateY(25px);
+  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
+}
+.moveHeaderDown {
+  transform: translateY(40vh);
+  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
+}
+
 
 
 @keyframes circleAppearence{
@@ -142,47 +161,22 @@
 .ball {
   transition: top 0.4s cubic-bezier(.61,0,.07,.98);
 }
-
 .moveBallDown {
   top: 87vh;
 }
-
 .moveBallUp {
   top: 5vh;
 }
 
 
-@keyframes darkModeToggle {
-  0%{
-    transform: translateX(0px);
-  }
-  100%{
-    transform: translateX(-37px);
-  }
-}
-@keyframes lightModeToggle {
-  0%{
-    transform: translateX(-37px);
-  }
-  100%{
-    transform: translateX(0px);
-  }
-}
+
 .darkModeToggle {
-  animation: darkModeToggle;
-  animation-duration: 100ms;
-  animation-delay: 0ms;
-  animation-timing-function:ease-in-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  transform: translateX(-37px);
+  transition: transform 0.2s cubic-bezier(.61,0,.07,.98);
 }
 .lightModeToggle {
-  animation: lightModeToggle;
-  animation-duration: 100ms;
-  animation-delay: 0ms;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  transform: translateX(0px);
+  transition: transform 0.2s cubic-bezier(.61,0,.07,.98);
 }
 
 
@@ -247,15 +241,6 @@
   transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
 }
 
-
-.moveHeaderUp {
-  transform: translateY(25px);
-  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
-}
-.moveHeaderDown {
-  transform: translateY(40vh);
-  transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
-}
 
 
 

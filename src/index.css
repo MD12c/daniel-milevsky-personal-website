@@ -82,7 +82,25 @@
 }
 
 
-
+@keyframes circleAppearence{
+  0%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.circleAppearence{
+  animation: circleAppearence;
+  animation-duration: 3000ms;
+  animation-delay: 0ms;
+  animation-timing-function:ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 @keyframes darkBallAppearence{
   0%{
     transform: translateX(calc(-100vw - 5rem));
@@ -121,26 +139,17 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-@keyframes circleAppearence{
-  0%{
-    opacity: 0;
-  }
-  70%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-.circleAppearence{
-  animation: circleAppearence;
-  animation-duration: 3000ms;
-  animation-delay: 0ms;
-  animation-timing-function:ease-in;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+.ball {
+  transition: top 0.4s cubic-bezier(.61,0,.07,.98);
 }
 
+.moveBallDown {
+  top: 87vh;
+}
+
+.moveBallUp {
+  top: 5vh;
+}
 
 
 @keyframes darkModeToggle {

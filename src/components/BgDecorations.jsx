@@ -10,18 +10,18 @@ export default function BgDecorations() {
                             circleAppearence`} />
         </div>
         <div className="absolute h-screen w-screen overflow-hidden">
-            <div className={`absolute w-20 h-20 rounded-full top-[5vh]
-                            ${darkMode ? "bg-dr2Green right-[5vw]" : "bg-amber-950/60 left-[5vw]"}
-                            ${darkMode ? "lg:right-[15vw]" : "lg:left-[15vw]"}
-                            ${darkMode ? "xl:right-[25vw]" : "xl:left-[25vw]"}
-                            ${darkMode ? "2xl:right-[30vw]" : "2xl:left-[30vw]"}
+            <div className={`absolute w-20 h-20 rounded-full ball 
+                            ${darkMode ? "bg-dfGreen moveBallDown" : "bg-amber-950/60 moveBallUp"} 
+                            left-[5vw] 
+                            lg:left-[15vw] 
+                            xl:left-[25vw] 
                             darkBallAppearence`} />
                               
-            <div className={`absolute w-20 h-20 rounded-full bottom-[5vh] 
-                            ${darkMode ? "bg-dfGreen left-[5vw]" : "bg-amber-500/60 right-[5vw]"} 
-                            ${darkMode ? "lg:left-[15vw]" : "lg:right-[15vw]"} 
-                            ${darkMode ? "xl:left-[25vw]" : "xl:right-[25vw]"} 
-                            ${darkMode ? "2xl:left-[30vw]" : "2xl:right-[30vw]"}
+            <div className={`absolute w-20 h-20 rounded-full ball
+                            ${darkMode ? "bg-dr2Green moveBallUp" : "bg-amber-500/60 moveBallDown"} 
+                            right-[5vw] 
+                            lg:right-[15vw] 
+                            xl:right-[25vw] 
                             lightBallAppearence`} />
         </div>
     </div>

@@ -27,40 +27,40 @@ export default function Header() {
   return (
     <div className={`flex mx-3 py-4 justify-between items-center
                     rounded-xl mt-1 lg:mx-40 md:m-2 
-                    ${darkMode ? "bg-ltSlate/80" : "shadow bg-lt2Gray/90"}`}>
+                    ${darkMode ? "bg-ltSecondaryDark/80" : "shadow bg-lt2Secondary/90"}`}>
       <div className="flex items-center whitespace-nowrap overflow-hidden">
         <h1 className={`pl-3 font-oxanium font-bold 
                       ${mobileMode ? "text-2xl" : "text-4xl"} 
-                      ${darkMode ? "text-ltGreen" : "text-black"}`}>{content}</h1>
+                      ${darkMode ? "text-ltPrimaryDark" : "text-black"}`}>{content}</h1>
         <h1 className={`font-oxanium font-bold
                       ${mobileMode ? "text-2xl" : "text-4xl"} 
-                      ${darkMode ? "text-ltGreen" : "text-black"}`}>{`${(TabMode === "Home" || TabMode === "none") ? "" : `/`+TabMode}`}</h1>
+                      ${darkMode ? "text-ltPrimaryDark" : "text-black"}`}>{`${(TabMode === "Home" || TabMode === "none") ? "" : `/`+TabMode}`}</h1>
         <div className={`fastPulse m-1 w-0.5 
                       ${(TabMode === "Home" || TabMode === "none") ? "" : "hidden"}
                       ${mobileMode ? "h-6" : "h-8"} 
-                      ${darkMode ? "bg-dfGreen" : "bg-black"}`}></div>
+                      ${darkMode ? "bg-dfPrimaryDark" : "bg-black"}`}></div>
       </div>
 
       <div className="flex flex-row">
         <div className="flex flex-row group w-9 overflow-hidden rounded-full ml-5"
              onClick={() => setDarkMode((prev) => !prev)}>
           <div className={`${darkMode ? "darkModeToggle" : "lightModeToggle"} flex flex-row`}>
-            <i className={`${iconStyle} translate-x-0 fa-solid fa-sun mr-2 text-dfOrange hover:text-ltOrange `} />
-            <i className={`${iconStyle} translate-x-0 fa-solid fa-moon text-dfGreen hover:text-ltGreen`} />
+            <i className={`${iconStyle} translate-x-0 fa-solid fa-sun mr-2 text-dfPrimary hover:text-ltPrimary `} />
+            <i className={`${iconStyle} translate-x-0 fa-solid fa-moon text-dfPrimaryDark hover:text-ltPrimaryDark`} />
           </div>
           <div className={`absolute mt-10 hidden group-hover:block -translate-x-8 font-oxanium
                           px-3 py-1 text-sm rounded text-white shadow-lg select-none 
-                          ${darkMode ? "bg-drSlate" : "bg-drGray"}`}>Dark/Light</div>
+                          ${darkMode ? "bg-drSecondaryDark" : "bg-drSecondary"}`}>Dark/Light</div>
         </div>
 
         <i
           className={`${iconStyle} mx-8  mr-5 group fa-solid fa-house 
-                      ${darkMode ? "text-dfGreen hover:text-ltGreen" : "text-dfOrange hover:text-ltOrange "}`}
+                      ${darkMode ? "text-dfPrimaryDark hover:text-ltPrimaryDark" : "text-dfPrimary hover:text-ltPrimary "}`}
           onClick={() => setTabMode("Home")}
         >
           <div className={`absolute mt-2 hidden group-hover:block -translate-x-3.5 font-oxanium
                               px-3 py-1 text-sm rounded text-white shadow-lg select-none 
-                              ${darkMode ? "bg-drSlate" : "bg-drGray"}`}
+                              ${darkMode ? "bg-drSecondaryDark" : "bg-drSecondary"}`}
                onClick={() => window.location.reload()}>Home</div>
         </i>
       </div>

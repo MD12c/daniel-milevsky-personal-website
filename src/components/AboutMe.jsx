@@ -15,26 +15,14 @@ export default function AboutMe() {
             <div className={`absolute w-full h-full backdrop-blur-sm 
                             ${TabMode === "AboutMe" ? "TabBlurIn" : "TabBlurOut"}`}>
             </div>
-            <div className={`z-20 sm:w-[90vw] w-full h-[90vh] mt-3 rounded-2xl 
-                            ${darkMode ? "bg-drSlate/80" : "bg-dfGray/80"}
+            <div className={`z-20 lg:w-[90vw] w-full h-[90vh] mt-3 rounded-2xl pt-[10vh]
+                            ${darkMode ? "bg-dr2Green/80" : "bg-dfGray/80"}
                             ${TabMode === "AboutMe" ? "TabIn" : "TabOut"}`}>
-                <div className="pt-[10vh] px-4">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
-                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
-                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
-                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
-                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
-                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
-                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
-                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sed provident ut praesentium nisi molestiae dolorem quos
-                 totam assumenda officia. Quasi cumque voluptatem voluptas praesentium perspiciatis dolore, neque non labore!</p>
+                <div className="px-4 pt-3 h-full bg-ltGray/50 rounded-b-xl text-xl atkinson-hyperlegible-regular">
+                    {/* <h2 className="text-3xl text-center mb-3">About me</h2> */}
+                    <p>
+
+                    </p>
                 </div>
             </div>
         </div>

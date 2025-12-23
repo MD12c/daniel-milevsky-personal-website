@@ -11,32 +11,32 @@ export default function AboutMe() {
     console.log("render " + rendered);
 
     const Software = [
-        { name: ["Autodesk Inventor"], Progress: "100" },
-        { name: ["Autodesk Fusion"], Progress: "50" },
-        { name: ["Autodesk AutoCad"], Progress: "50" },
-        { name: ["FluidSym"], Progress: "75" },
-        { name: ["Blender"], Progress: "50" },
-        { name: ["ArduinoIDE"], Progress: "75" },
-        { name: ["Office Tools"], Progress: "75" },
+        { name: "Autodesk Inventor", Progress: "100" },
+        { name: "Autodesk Fusion", Progress: "50" },
+        { name: "Autodesk AutoCad", Progress: "50" },
+        { name: "FluidSym", Progress: "75" },
+        { name: "Blender", Progress: "50" },
+        { name: "ArduinoIDE", Progress: "75" },
+        { name: "Office Tools", Progress: "75" },
     ];
     const General = [
-        { name: ["Manual Machining"], Progress: "75" },
-        { name: ["Electronics"], Progress: "75" },
-        { name: ["3D Printing"], Progress: "75" },
-        { name: ["Math & Kinemtics"], Progress: "50" }
+        { name: "Manual Machining", Progress: "75" },
+        { name: "Electronics", Progress: "75" },
+        { name: "3D Printing", Progress: "75" },
+        { name: "Math & Kinemtics", Progress: "50" },
     ];
     const Coding = [
-        { name: ["C++"], Progress: "75" },
-        { name: ["C#"], Progress: "50" },
-        { name: ["Arduino C++"], Progress: "75" },
-        { name: ["React + Tailwind"], Progress: "50" },
-        { name: ["Html + CSS"], Progress: "50" },
+        { name: "C++", Progress: "75" },
+        { name: "C#", Progress: "50" },
+        { name: "Arduino C++", Progress: "75" },
+        { name: "React + Tailwind", Progress: "50" },
+        { name: "Html + CSS", Progress: "50" },
     ];
 
     return (
-        <div className="absolute z-0 w-full h-full overflow-hidden flex justify-center">
+        <div className="z-0 w-full h-full flex justify-center">
             <div
-                className={`absolute w-full h-full backdrop-blur-sm 
+                className={`w-full h-full backdrop-blur-sm 
                             ${
                                 TabMode === "AboutMe"
                                     ? "TabBlurIn"
@@ -44,7 +44,7 @@ export default function AboutMe() {
                             }`}
             ></div>
             <div
-                className={`z-20 lg:w-[90vw] w-full h-[95vh] mt-3 rounded-2xl pt-[10vh]
+                className={`absolute lg:w-[90vw] w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh]
                             ${
                                 darkMode
                                     ? "bg-drSecondaryDark/80"
@@ -53,7 +53,7 @@ export default function AboutMe() {
                             ${TabMode === "AboutMe" ? "TabIn" : "TabOut"}`}
             >
                 <div
-                    className={`px-4 pt-3 h-full rounded-b-2xl text-xl  overflow-y-auto scrollbar-thin scrollbar-webkit
+                    className={`z-40 px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"
@@ -61,10 +61,10 @@ export default function AboutMe() {
                             }`}
                 >
                     <div className="w-full h-full">
-                        <div className="flex justify-end items-center">
-                            <div className="flex flex-col items-baseline w-120 ">
+                        <div className="flex justify-start items-center">
+                            <div className="flex flex-col items-baseline ">
                                 {/* <h2 className="text-3xl text-center mb-3">About me</h2> */}
-                                <p>
+                                <p className="max-w-200 2xl:mx-30">
                                     Hi, I'm Daniel Milevsky, a student and a
                                     maker passionate about creating and learning
                                     new things in my free time. I'm currently
@@ -87,53 +87,79 @@ export default function AboutMe() {
                                 </p>
                             </div>
                         </div>
-                        <p>My experiences:</p>
-                        <div className="flex flex-row mt-5 mb-5 flex-wrap">
-                            <div className="inset-0">
+                        <p className="mt-5">My experiences:</p>
+                        <div className="flex flex-row flex-wrap mt-5 justify-center gap-15 2xl:justify-between 2xl:mx-25 2xl:flex-nowrap">
+                            <div className="inset-0 mb-10">
                                 <p>Software</p>
-                                <ul className="flex justify-between gap-y-3 flex-col mt-3 ml-3 mr-60">
-                                    {Software.map((Software, i) => (
-                                        <div className="flex flex-row">
-                                            <li key={i}>
-                                                {Software.name}
-                                            </li>
-                                            <ProgressBar 
-                                            barWidth={Software.Progress} />
-                                        </div>
-                                    ))}
-                                </ul>
+                                {Software.map((Software, i) => (
+                                    <ul
+                                        className={`
+                                                    grid 
+                                                    grid-cols-1
+                                                    gap-x-4 
+                                                    items-center
+                                                    2xl:grid-cols-2`}
+                                    >
+                                        <li
+                                            key={i}
+                                            className="mt-4 whitespace-nowrap"
+                                        >
+                                            {Software.name}
+                                        </li>
+                                        <ProgressBar
+                                            barWidth={Software.Progress}
+                                        />
+                                    </ul>
+                                ))}
                             </div>
 
-                            <div className="inset-0">
+                            <div className="inset-0 mb-10">
                                 <p>General</p>
-                                <ul className="mt-3 ml-3 mr-60 flex justify-between gap-3 flex-col">
-                                    {General.map((General, i) => (
-                                        <div className="flex flex-row">
-                                            <li key={i}>
-                                                {General.name}
-                                            </li>
-                                            <ProgressBar 
-                                            barWidth={General.Progress} />
-                                        </div>
-                                    ))}
-                                </ul>
+                                {General.map((General, i) => (
+                                    <ul
+                                        className={`
+                                                grid 
+                                                grid-cols-1 
+                                                gap-x-4 
+                                                items-center 
+                                                2xl:grid-cols-2`}
+                                    >
+                                        <li
+                                            key={i}
+                                            className="mt-4 whitespace-nowrap"
+                                        >
+                                            {General.name}
+                                        </li>
+                                        <ProgressBar
+                                            barWidth={General.Progress}
+                                        />
+                                    </ul>
+                                ))}
                             </div>
 
-                            <div className="inset-0">
+                            <div className="inset-0 mb-10">
                                 <p>Coding</p>
-                                <ul className="mt-3 mx-3 flex justify-between gap-3 flex-col">
-                                    {Coding.map((Coding, i) => (
-                                        <div className="flex flex-row">
-                                            <li key={i}>
-                                                {Coding.name}
-                                            </li>
-                                            <ProgressBar 
-                                            barWidth={Coding.Progress} />
-                                        </div>
-                                    ))}
-                                </ul>
+                                {Coding.map((Coding, i) => (
+                                    <ul
+                                        className={`
+                                                    grid 
+                                                    grid-cols-1
+                                                    gap-x-4
+                                                    items-center
+                                                    2xl:grid-cols-2`}
+                                    >
+                                        <li
+                                            key={i}
+                                            className="mt-4 whitespace-nowrap"
+                                        >
+                                            {Coding.name}
+                                        </li>
+                                        <ProgressBar
+                                            barWidth={Coding.Progress}
+                                        />
+                                    </ul>
+                                ))}
                             </div>
-
                         </div>
                     </div>
                 </div>

@@ -10,8 +10,10 @@ export default function ProgressBar({ barWidth }) {
 
 
   return (
-    <div className="absolute ml-45 mt-2 w-50 h-4 bg-drSecondary rounded-full overflow-visible">
-        <div className={`ml-0 h-4 bg-dfPrimary rounded-full`}
+    <div className={`mt-2 w-50 h-4 rounded-full overflow-visible
+    ${darkMode ? "bg-drSecondaryDark" : "bg-drSecondary"}`}>
+        <div className={`ml-0 h-4 rounded-full
+        ${darkMode ? "bg-dfPrimaryDark" : "bg-dfPrimary"}`}
             style={{ width: `${barWidth}%`}}></div>
     </div>
   );

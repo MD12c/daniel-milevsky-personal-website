@@ -34,7 +34,7 @@ export default function AboutMe() {
     ];
 
     return (
-        <div className="z-0 w-full h-full flex justify-center">
+        <div className="fixed z-0 w-full h-full flex overflow-hidden justify-center">
             <div
                 className={`w-full h-full backdrop-blur-sm 
                             ${
@@ -44,7 +44,7 @@ export default function AboutMe() {
                             }`}
             ></div>
             <div
-                className={`absolute lg:w-[90vw] w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh]
+                className={`absolute lg:w-[90vw] w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh] 
                             ${
                                 darkMode
                                     ? "bg-drSecondaryDark/80"

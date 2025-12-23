@@ -246,6 +246,25 @@
 }
 
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5c5c5c69;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 
 /*custom color pallet*/
@@ -260,6 +279,7 @@
   --color-drSecondary: var(--color-gray-500);
   --color-navTab: #bac0ca;
 
+  --color-lt2PrimaryDark: var(--color-teal-200);
   --color-ltPrimaryDark: var(--color-teal-300);
   --color-dfPrimaryDark: var(--color-teal-500);
   --color-drPrimaryDark: var(--color-teal-700);
@@ -268,8 +288,8 @@
   --color-lt2SecondaryDark: var(--color-slate-600);
   --color-ltSecondaryDark: var(--color-teal-950);
   --color-dfSecondaryDark: var(--color-slate-800);
-  --color-drSecondaryDark: var(--color-slate-900);
-  --color-dr2SecondaryDark: var(--color-slate-950);
+  --color-drSecondaryDark: #023131;
+  --color-dr2SecondaryDark: #011818;
 }
 * {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;

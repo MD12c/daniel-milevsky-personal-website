@@ -21,9 +21,9 @@ export default function AboutMe() {
     ];
     const General = [
         { name: "Manual Machining", Progress: "75" },
-        { name: "Electronics", Progress: "75" },
+        { name: "Electronics", Progress: "50" },
         { name: "3D Printing", Progress: "75" },
-        { name: "Math & Kinemtics", Progress: "50" },
+        { name: "Math & Kinematics", Progress: "50" },
     ];
     const Coding = [
         { name: "C++", Progress: "75" },
@@ -34,9 +34,9 @@ export default function AboutMe() {
     ];
 
     return (
-        <div className="fixed z-0 w-full h-full flex overflow-hidden justify-center">
+        <div className="w-full h-full flex justify-center">
             <div
-                className={`w-full h-full backdrop-blur-sm 
+                className={`w-full h-full backdrop-blur-sm pointer-events-none 
                             ${
                                 TabMode === "AboutMe"
                                     ? "TabBlurIn"
@@ -53,7 +53,7 @@ export default function AboutMe() {
                             ${TabMode === "AboutMe" ? "TabIn" : "TabOut"}`}
             >
                 <div
-                    className={`z-40 px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto scrollbar-thin scrollbar-webkit
+                    className={`z-60 px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto [-webkit-overflow-scrolling:touch] scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"

@@ -26,7 +26,7 @@ export default function Header() {
   const iconStyle = "transition text-3xl cursor-pointer";
   return (
     <div className={`flex mx-7 md:mx-9 py-4 justify-between items-center
-                    rounded-xl mt-1 lg:mx-30 2xl:mx-72 
+                    rounded-xl mt-1 lg:mx-30 2xl:mx-90
                     ${darkMode ? "bg-ltSecondaryDark/80" : "shadow bg-lt2Secondary/90"}`}>
       <div className="flex items-center whitespace-nowrap overflow-hidden">
         <h1 className={`pl-3 font-oxanium font-bold 

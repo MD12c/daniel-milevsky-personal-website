@@ -6,6 +6,12 @@
   font-weight: 400;
   font-style: normal;
 }
+.font-oxanium-bold {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 .atkinson-hyperlegible-regular {
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 400;
@@ -77,7 +83,7 @@
   animation-fill-mode: forwards;
 }
 .navigationUp {
-  transform: translateY(-50vh);
+  transform: translateY(-60vh);
   transition: transform 0.4s cubic-bezier(.61,0,.07,.98);
 }
 .navigationDown {
@@ -286,7 +292,7 @@
 
   --color-lt2SecondaryDark: var(--color-slate-600);
   --color-ltSecondaryDark: var(--color-teal-950);
-  --color-dfSecondaryDark: var(--color-slate-800);
+  --color-dfSecondaryDark: var(--color-gray-800);
   --color-drSecondaryDark: #023131;
   --color-dr2SecondaryDark: #011818;
 }

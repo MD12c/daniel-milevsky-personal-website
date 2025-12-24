@@ -40,7 +40,7 @@ function AppContent() {
       <div className="z-10 fixed inset-0 pointer-events-none"><Bgblur /></div>
       <div className="z-0 fixed inset-0 pointer-events-none"><BgDecorations /></div>
 
-      <div className={`z-40 absolute inset-x-0 top-0  w-screen h-5
+      <div className={`z-40 absolute inset-x-0 top-0  w-screen h-5 
                       ${(TabMode === "Home" || TabMode ==="none") ? (mobileMode ? "moveHeaderUp" : "moveHeaderDown") : "moveHeaderUp"}`}>
         <Header className="" />
         <Navigation className={``} />

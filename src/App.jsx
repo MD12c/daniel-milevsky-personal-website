@@ -7,10 +7,12 @@ import Navigation from './components/Navigation.jsx'
 import AboutMe from './components/AboutMe.jsx'
 import Projects from './components/Projects.jsx'
 import ContactMe from './components/ContactMe.jsx'
+import Gallery from './components/Gallery.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import WhatIsToCome from './components/WhatIsToCome.jsx'
 import BgDecorations from './components/BgDecorations.jsx'
+import Bgblur from './components/BGblur.jsx'
 
 function AppContent() {
   const { darkMode } = useContext(DarkModeContext);
@@ -18,14 +20,15 @@ function AppContent() {
   const { rendered } = useContext(RenderContext);
   const { mobileMode, setMobileMode } = useContext(MobileContext);
 
-useEffect(() => {
-  setMobileMode(window.matchMedia("(max-width: 768px)").matches);
-  const handler = (e) => setMobileMode(e.matches);
-  const mediaQuery = window.matchMedia("(max-width: 768px)");
-  mediaQuery.addEventListener("change", handler);
-  return () => mediaQuery.removeEventListener("change", handler);
-}, []);
-console.log("mobile " + mobileMode);
+  useEffect(() => {
+    setMobileMode(window.matchMedia("(max-width: 768px)").matches);
+    const handler = (e) => setMobileMode(e.matches);
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    mediaQuery.addEventListener("change", handler);
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, []);
+  console.log("mobile " + mobileMode);
+
 
   return (
     <div className="absolute overflow-hidden w-screen h-screen inset-0 bg-[url('/Orange-landscape.jpg')] bg-cover bg-center z-0">
@@ -33,19 +36,24 @@ console.log("mobile " + mobileMode);
       transition-opacity duration-1000 ease-in-out pointer-events-none 
       ${darkMode ? "opacity-100" : "opacity-0"}`}>
       </div>
-        <BgDecorations className="absolute z-10 pointer-events-none" />
-        <div className={`absolute inset-x-0 top-0 z-30 w-screen h-5
-                        ${(TabMode === "Home" || TabMode ==="none") ? (mobileMode ? "moveHeaderUp" : "moveHeaderDown") : "moveHeaderUp"}`}>
-          <Header className="" />
-          <Navigation className={``} />
-        </div>
-        <div className="w-screen h-screen overflow-hidden">
-          <AboutMe className="absolute inset-0 z-20" />
-        </div>
-          <Projects />
-          <WhatIsToCome />
-          <ContactMe />
-          <Footer />
+
+      <div className="z-10 fixed inset-0 pointer-events-none"><Bgblur /></div>
+      <div className="z-0 fixed inset-0 pointer-events-none"><BgDecorations /></div>
+
+      <div className={`z-40 absolute inset-x-0 top-0  w-screen h-5
+                      ${(TabMode === "Home" || TabMode ==="none") ? (mobileMode ? "moveHeaderUp" : "moveHeaderDown") : "moveHeaderUp"}`}>
+        <Header className="" />
+        <Navigation className={``} />
+      </div>
+      <div className="z-30 isolate relative w-screen h-screen overflow-hidden">
+        <AboutMe />
+        <Projects />
+        <WhatIsToCome />
+        <Gallery />
+      </div>
+
+        <ContactMe />
+        <Footer />
       
     </div>
   )

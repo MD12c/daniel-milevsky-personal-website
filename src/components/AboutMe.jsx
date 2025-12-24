@@ -17,13 +17,14 @@ export default function AboutMe() {
         { name: "FluidSym", Progress: "75" },
         { name: "Blender", Progress: "50" },
         { name: "ArduinoIDE", Progress: "75" },
-        { name: "Office Tools", Progress: "75" },
+        { name: "Office 365 Tools", Progress: "75" },
     ];
     const General = [
         { name: "Manual Machining", Progress: "75" },
         { name: "Electronics", Progress: "50" },
         { name: "3D Printing", Progress: "75" },
         { name: "Math & Kinematics", Progress: "50" },
+        { name: "Welding", Progress: "50" },
     ];
     const Coding = [
         { name: "C++", Progress: "75" },
@@ -34,26 +35,18 @@ export default function AboutMe() {
     ];
 
     return (
-        <div className="w-full h-full flex justify-center">
-            <div
-                className={`w-full h-full backdrop-blur-sm pointer-events-none 
-                            ${
-                                TabMode === "AboutMe"
-                                    ? "TabBlurIn"
-                                    : "TabBlurOut"
-                            }`}
-            ></div>
+        <div className={`w-full h-full flex justify-center absolute inset-0 
+            ${TabMode === "AboutMe" ? "TabIn" : "TabOut"}`}>
             <div
                 className={`absolute lg:w-[90vw] w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh] 
                             ${
                                 darkMode
                                     ? "bg-drSecondaryDark/80"
                                     : "bg-dfSecondary/80"
-                            }
-                            ${TabMode === "AboutMe" ? "TabIn" : "TabOut"}`}
+                            }`}
             >
                 <div
-                    className={`z-60 px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto [-webkit-overflow-scrolling:touch] scrollbar-thin scrollbar-webkit
+                    className={`px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto [-webkit-overflow-scrolling:touch] scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"
@@ -64,21 +57,26 @@ export default function AboutMe() {
                         <div className="flex justify-start items-center">
                             <div className="flex flex-col items-baseline ">
                                 {/* <h2 className="text-3xl text-center mb-3">About me</h2> */}
-                                <p className="max-w-200 2xl:mx-30">
+                                <p className="2xl:mx-10">
                                     Hi, I'm Daniel Milevsky, a student and a
                                     maker passionate about creating and learning
                                     new things in my free time. I'm currently
                                     doing my 6th semester in mechanical
-                                    engineering at Dawson College. <br />
-                                    There we are doing:
+                                    engineering at Dawson College.
                                 </p>
-                                <ul className="flex flex-col list-disc pl-5">
+                                <span>
+                                    View my full course list on 
+                                        <a className={`${darkMode ? "text-dfPrimaryDark" : "text-dfPrimary"}`}
+                                            href="https://www.dawsoncollege.qc.ca/mechanical-engineering-technology/design-option-course-list/"> Dawsons website</a> 
+                                </span>
+                                <p>In short, we are doing:</p>
+                                <ul className="flex gap-x-10 flex-col lg:justify-between lg:flex-row list-disc px-5 my-4">
                                     <li>Design with 3d modeling</li>
                                     <li>Material proprieties</li>
                                     <li>Machining projects</li>
-                                    <li>Pneumatic & Hydraulic systems</li>
+                                    <li>Hydraulic & {<br className="sm:hidden"/>}Pneumatic systems</li>
                                     <li>Electronics & Coding</li>
-                                    <li>And all kinds of fun projects</li>
+                                    <li>And all kinds of projects</li>
                                 </ul>
                                 <p>
                                     With all this said, I'm always looking
@@ -87,7 +85,7 @@ export default function AboutMe() {
                                 </p>
                             </div>
                         </div>
-                        <p className="mt-5">My experiences:</p>
+                        <p className="mt-5 2xl:mt-20">My experiences:</p>
                         <div className="flex flex-row flex-wrap mt-5 justify-center gap-15 2xl:justify-between 2xl:mx-25 2xl:flex-nowrap">
                             <div className="inset-0 mb-10">
                                 <p>Software</p>
@@ -102,11 +100,11 @@ export default function AboutMe() {
                                     >
                                         <li
                                             key={i}
-                                            className="mt-4 whitespace-nowrap"
+                                            className="mt-4 2xl:mt-8 whitespace-nowrap"
                                         >
                                             {Software.name}
                                         </li>
-                                        <ProgressBar
+                                        <ProgressBar 
                                             barWidth={Software.Progress}
                                         />
                                     </ul>
@@ -126,7 +124,7 @@ export default function AboutMe() {
                                     >
                                         <li
                                             key={i}
-                                            className="mt-4 whitespace-nowrap"
+                                            className="mt-4 2xl:mt-8 whitespace-nowrap"
                                         >
                                             {General.name}
                                         </li>
@@ -150,7 +148,7 @@ export default function AboutMe() {
                                     >
                                         <li
                                             key={i}
-                                            className="mt-4 whitespace-nowrap"
+                                            className="mt-4 2xl:mt-8 whitespace-nowrap"
                                         >
                                             {Coding.name}
                                         </li>

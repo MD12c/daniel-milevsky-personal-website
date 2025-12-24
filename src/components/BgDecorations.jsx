@@ -4,7 +4,7 @@ export default function BgDecorations() {
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
   return (
     <div>
-        <div className="absolute overflow-hidden h-screen w-screen flex items-center justify-center shadow-black/50">
+        <div className="z-40 absolute overflow-hidden h-screen w-screen flex items-center justify-center shadow-black/50">
             <div className={`absolute w-170 h-170 rounded-full border-25 
                             ${darkMode ? "border-drPrimaryDark/50" : "border-amber-700/50"}
                             circleAppearence`} />

@@ -3,6 +3,7 @@ import { DarkModeProvider, DarkModeContext } from './context/DarkModeContext.jsx
 import { TabProvider, TabContext } from './context/TabContext.jsx'
 import { RenderProvider, RenderContext } from './context/RenderContext.jsx'
 import { MobileProvider, MobileContext } from './context/MobileContext.jsx'
+import { ProjectTabProvider } from './context/ProjectTabContext.jsx'
 import Navigation from './components/Navigation.jsx'
 import AboutMe from './components/AboutMe.jsx'
 import Projects from './components/Projects.jsx'
@@ -42,16 +43,21 @@ function AppContent() {
 
       <div className={`z-40 absolute inset-x-0 top-0  w-screen h-5 
                       ${(TabMode === "Home" || TabMode ==="none") ? (mobileMode ? "moveHeaderUp" : "moveHeaderDown") : "moveHeaderUp"}`}>
-        <Header className="" />
-        <Navigation className={``} />
+        <div className="flex justify-center">
+          <div className="max-w-250 h-25">
+            <Header className="" />
+            <Navigation className={``} />
+          </div>
+        </div>
       </div>
-      <div className="z-30 isolate relative w-screen h-screen overflow-hidden">
-        <AboutMe />
-        <Projects />
-        <WhatIsToCome />
-        <Gallery />
+      <div className="flex justify-center z-30 isolate relative w-screen h-screen overflow-hidden">
+        <div className="">
+          <AboutMe />
+          <Projects />
+          <WhatIsToCome />
+          <Gallery />
+        </div>
       </div>
-
         <ContactMe />
         <Footer />
       
@@ -65,7 +71,9 @@ function App() {
       <DarkModeProvider>
         <TabProvider>
           <RenderProvider>
-          <AppContent />
+            <ProjectTabProvider>
+              <AppContent />
+            </ProjectTabProvider>
           </RenderProvider>
         </TabProvider>
       </DarkModeProvider>

@@ -14,7 +14,7 @@ export default function AboutMe() {
         { name: "Autodesk Inventor", Progress: "100" },
         { name: "Autodesk Fusion", Progress: "50" },
         { name: "Autodesk AutoCad", Progress: "50" },
-        { name: "FluidSym", Progress: "75" },
+        { name: "FluidSym", Progress: "50" },
         { name: "Blender", Progress: "50" },
         { name: "ArduinoIDE", Progress: "75" },
         { name: "Office 365 Tools", Progress: "75" },
@@ -27,18 +27,18 @@ export default function AboutMe() {
         { name: "Welding", Progress: "50" },
     ];
     const Coding = [
-        { name: "C++", Progress: "75" },
-        { name: "C#", Progress: "50" },
+        { name: "C++", Progress: "50" },
+        { name: "C#", Progress: "25" },
         { name: "Arduino C++", Progress: "75" },
         { name: "React + Tailwind", Progress: "50" },
         { name: "Html + CSS", Progress: "50" },
     ];
 
     return (
-        <div className={`w-full h-full flex justify-center absolute inset-0 
+        <div className={`absolute w-full h-full flex justify-center inset-0 
             ${TabMode === "AboutMe" ? "TabIn" : "TabOut"}`}>
             <div
-                className={`absolute lg:w-[90vw] w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh] 
+                className={`lg:w-350 w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh] 
                             ${
                                 darkMode
                                     ? "bg-drSecondaryDark/80"
@@ -46,7 +46,7 @@ export default function AboutMe() {
                             }`}
             >
                 <div
-                    className={`px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto [-webkit-overflow-scrolling:touch] scrollbar-thin scrollbar-webkit
+                    className={`px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"
@@ -86,7 +86,7 @@ export default function AboutMe() {
                             </div>
                         </div>
                         <p className="mt-5 2xl:mt-20">My experiences:</p>
-                        <div className="flex flex-row flex-wrap mt-5 justify-center gap-15 2xl:justify-between 2xl:mx-25 2xl:flex-nowrap">
+                        <div className="flex flex-row flex-wrap mt-5 justify-center gap-15 2xl:justify-between 2xl:mx-10 2xl:flex-nowrap">
                             <div className="inset-0 mb-10">
                                 <p>Software</p>
                                 {Software.map((Software, i) => (

@@ -3,7 +3,12 @@ import { TabContext } from "../context/TabContext";
 import { DarkModeContext } from "../context/DarkModeContext";
 import { ProjectTabContext } from "../context/ProjectTabContext";
 import NerfGun from "./ProjectsContent/NerfGun";
+import AssassinsCreedKnife from "./ProjectsContent/AssassinsCreedKnife";
 import Divider from "./ProjectsContent/Divider";
+import CombinationLock from "./ProjectsContent/CombinationLock";
+import BlowDartTube from "./ProjectsContent/BlowDartTube";
+import SimpleCalculator from "./ProjectsContent/SimpleCalculator";
+import KaliLinux from "./ProjectsContent/KaliLinux";
 
 export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
@@ -39,6 +44,7 @@ export default function Projects() {
         "Plotter",
         "Robot",
         "Storage tank",
+        "Hand"
     ];
     const CodingProps = [
         "This website",
@@ -47,7 +53,7 @@ export default function Projects() {
         "Robot controls"
     ];
     const categories = [
-        { name: "Before", items: BeforeProps },
+        { name: "Before College", items: BeforeProps },
         { name: "Machining", items: MachiningProps },
         { name: "Design", items: DesignProps },
         { name: "Coding", items: CodingProps }
@@ -88,7 +94,17 @@ export default function Projects() {
                         </div>
                     </div>
                     <Divider />
+                    <div><AssassinsCreedKnife /></div>
+                    <Divider />
                     <div><NerfGun /></div>
+                    <Divider />
+                    <div><CombinationLock /></div>
+                    <Divider />
+                    <div><BlowDartTube /></div>
+                    <Divider />
+                    <div><SimpleCalculator /></div>
+                    <Divider />
+                    <div><KaliLinux /></div>
                 </div>
             </div>
         </div>

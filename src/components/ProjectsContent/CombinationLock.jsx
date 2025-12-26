@@ -2,21 +2,27 @@ import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../context/DarkModeContext";
 import { ProjectTabContext } from "../../context/ProjectTabContext";
 
-export default function NerfGun() {
+export default function CombinationLock() {
     const { darkMode } = useContext(DarkModeContext);
     const { ProjectTab } = useContext(ProjectTabContext);
 
     return (
         <div className="mb-8">
-            <h2 className="text-3xl font-oxanium-bold mb-5">Nerf Gun</h2>
+            <h2 className="text-3xl font-oxanium-bold mb-5">
+                Combination Lock
+            </h2>
             <div className="flex flex-row items-center">
-                <div className={`w-5 h-0.5 mr-1 ${darkMode ? "bg-white/20" : "bg-black/50"}`} />
+                <div
+                    className={`w-5 h-0.5 mr-1 ${
+                        darkMode ? "bg-white/20" : "bg-black/50"
+                    }`}
+                />
                 <h3 className="text-2xl">Intro</h3>
             </div>
             <p>
-                This was my second 3D printed and Inventor designed project. As
-                a kid, I was facinated by the mechansim of nerf guns, so I
-                decided to attempt to build one of my own with peacefull intent.
+                This time I decided to make the mechanism of a combination
+                padlock with 4 rotary dials as a step up from my previous
+                projects.
             </p>
             <div className="mt-5 flex flex-row items-center">
                 <div
@@ -27,7 +33,8 @@ export default function NerfGun() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                I learned how to use angled planes and more advanced uses of planes in inventor.
+                I learned how combination locks work internally and that writing
+                with a sharpie on PLA plastic is a bad idea.
             </p>
         </div>
     );

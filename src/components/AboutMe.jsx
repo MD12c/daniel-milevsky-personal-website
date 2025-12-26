@@ -12,26 +12,25 @@ export default function AboutMe() {
 
     const Software = [
         { name: "Autodesk Inventor", Progress: "100" },
-        { name: "Autodesk Fusion", Progress: "50" },
+        { name: "Autodesk Fusion360", Progress: "50" },
         { name: "Autodesk AutoCad", Progress: "50" },
-        { name: "FluidSym", Progress: "50" },
-        { name: "Blender", Progress: "50" },
-        { name: "ArduinoIDE", Progress: "75" },
-        { name: "Office 365 Tools", Progress: "75" },
+        { name: "FluidSIM", Progress: "50" },
+        { name: "Blender", Progress: "25" },
+        { name: "Office 365 Tools", Progress: "75" }
     ];
     const General = [
         { name: "Manual Machining", Progress: "75" },
-        { name: "Electronics", Progress: "50" },
         { name: "3D Printing", Progress: "75" },
+        { name: "Electronics", Progress: "50" },
         { name: "Math & Kinematics", Progress: "50" },
-        { name: "Welding", Progress: "50" },
+        { name: "Welding", Progress: "50" }
     ];
     const Coding = [
         { name: "C++", Progress: "50" },
+        { name: "Arduino C++", Progress: "50" },
         { name: "C#", Progress: "25" },
-        { name: "Arduino C++", Progress: "75" },
-        { name: "React + Tailwind", Progress: "50" },
-        { name: "Html + CSS", Progress: "50" },
+        { name: "React + Tailwind", Progress: "25" },
+        { name: "Html + CSS", Progress: "25" }
     ];
 
     return (

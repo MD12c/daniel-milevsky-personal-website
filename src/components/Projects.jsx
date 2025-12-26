@@ -9,6 +9,24 @@ import CombinationLock from "./ProjectsContent/CombinationLock";
 import BlowDartTube from "./ProjectsContent/BlowDartTube";
 import SimpleCalculator from "./ProjectsContent/SimpleCalculator";
 import KaliLinux from "./ProjectsContent/KaliLinux";
+import Hammer from "./ProjectsContent/Hammer";
+import Gears from "./ProjectsContent/Gears";
+import Cclamp from "./ProjectsContent/Cclamp";
+import Welding from "./ProjectsContent/Welding";
+import ScrewDriver from "./ProjectsContent/ScrewDriver";
+import HolePuncher from "./ProjectsContent/HolePuncher";
+import AirEngine from "./ProjectsContent/AirEngine";
+import Glider from "./ProjectsContent/Glider";
+import Glasses from "./ProjectsContent/Glasses";
+import Plotter from "./ProjectsContent/Plotter";
+import Robot from "./ProjectsContent/Robot";
+import StorageTank from "./ProjectsContent/StorageTank";
+import Hand from "./ProjectsContent/Hand";
+import ThisWebsite from "./ProjectsContent/ThisWebsite";
+import ImageToMachineCode from "./ProjectsContent/ImageToMachineCode";
+import CSVParser from "./ProjectsContent/CSVParser";
+import RobotControls from "./ProjectsContent/RobotControls";
+
 
 export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
@@ -76,6 +94,16 @@ export default function Projects() {
             behavior: "smooth",
         });
     };
+    const scrollToTop = () => {
+        const container = document.querySelector("[data-scroll-container]");
+        if (!container) return;
+
+        container.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
 
     return (
         <div
@@ -124,7 +152,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="sticky top-[90%] flex justify-end">
-                        <div
+                        <div onClick={scrollToTop}
                             className={`flex justify-center items-center rounded-2xl w-15 h-15 shadow-2xs active:shadow-inner hover:cursor-pointer ${
                                 darkMode
                                     ? "bg-drSecondaryDark/30 hover:bg-dfSecondaryDark/80"
@@ -165,6 +193,41 @@ export default function Projects() {
                     <div id={`${makeId("Kali linux")}`}>
                         <KaliLinux />
                     </div>
+                    <Divider />
+                    <div id={`${makeId("Hammer")}`}><Hammer /></div>
+                    <Divider />
+                    <div id={`${makeId("Gears")}`}><Gears /></div>
+                    <Divider />
+                    <div id={`${makeId("C clamp")}`}><Cclamp /></div>
+                    <Divider />
+                    <div id={`${makeId("Welding")}`}><Welding /></div>
+                    <Divider />
+                    <div id={`${makeId("Screw driver")}`}><ScrewDriver /></div>
+                    <Divider />
+                    <div id={`${makeId("Hole puncher")}`}><HolePuncher /></div>
+                    <Divider />
+                    <div id={`${makeId("Air engine")}`}><AirEngine /></div>
+                    <Divider />
+                    <div id={`${makeId("Glider")}`}><Glider /></div>
+                    <Divider />
+                    <div id={`${makeId("Glasses")}`}><Glasses /></div>
+                    <Divider />
+                    <div id={`${makeId("Plotter")}`}><Plotter /></div>
+                    <Divider />
+                    <div id={`${makeId("Robot")}`}><Robot /></div>
+                    <Divider />
+                    <div id={`${makeId("Storage tank")}`}><StorageTank /></div>
+                    <Divider />
+                    <div id={`${makeId("Hand")}`}><Hand /></div>
+                    <Divider />
+                    <div id={`${makeId("This website")}`}><ThisWebsite /></div>
+                    <Divider />
+                    <div id={`${makeId("Image to machine code")}`}><ImageToMachineCode /></div>
+                    <Divider />
+                    <div id={`${makeId(".csv parser")}`}><CSVParser /></div>
+                    <Divider />
+                    <div id={`${makeId("Robot controls")}`}><RobotControls /></div>
+                    <Divider />
                 </div>
             </div>
         </div>

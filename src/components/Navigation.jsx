@@ -30,10 +30,10 @@ export default function Navigation() {
 						onMouseEnter={() => setHover(i)} 
 						onMouseLeave={() => setHover(null)}
 						onClick={() => setTabMode(item.link)}>
-						<div className={`md:translate-x-25 w-60 h-4 rotate-45 translate-x-45
+						<div className={`md:translate-x-25 w-60 h-4 rotate-45 translate-x-30
 										${darkMode ? "bg-ltPrimaryDark" : "bg-dfPrimary"}
 										${hover === i ? "ribbonAppearance" : "ribbonDisappearance"}`} />
-						<div className={`md:translate-x-25 w-60 h-2 bg-drSecondary rotate-45 translate-x-40
+						<div className={`md:translate-x-25 w-60 h-2 bg-drSecondary rotate-45 translate-x-25
 										${hover === i ? "ribbonAppearance" : "ribbonDisappearance"}
 										${darkMode ? "bg-slate-950" : "bg-drSecondary"}`} />
 						<h2 className={textStyle + `${darkMode ? "text-ltPrimaryDark" : "text-black"}`}>{item.name}</h2>

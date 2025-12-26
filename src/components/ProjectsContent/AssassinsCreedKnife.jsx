@@ -9,7 +9,7 @@ export default function AssassinsCreedKnife() {
     return (
         <div className="mb-8">
             <h2 className="text-3xl font-oxanium-bold mb-5">
-                Assassin's Creed Knife
+                Hidden blade
             </h2>
             <div className="flex flex-row items-center">
                 <div

@@ -12,8 +12,8 @@ import KaliLinux from "./ProjectsContent/KaliLinux";
 import Hammer from "./ProjectsContent/Hammer";
 import Gears from "./ProjectsContent/Gears";
 import Cclamp from "./ProjectsContent/Cclamp";
-import Welding from "./ProjectsContent/Welding";
 import ScrewDriver from "./ProjectsContent/ScrewDriver";
+import VBlock from "./ProjectsContent/VBlock";
 import HolePuncher from "./ProjectsContent/HolePuncher";
 import AirEngine from "./ProjectsContent/AirEngine";
 import Glider from "./ProjectsContent/Glider";
@@ -26,7 +26,6 @@ import ThisWebsite from "./ProjectsContent/ThisWebsite";
 import ImageToMachineCode from "./ProjectsContent/ImageToMachineCode";
 import CSVParser from "./ProjectsContent/CSVParser";
 import RobotControls from "./ProjectsContent/RobotControls";
-
 
 export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
@@ -42,7 +41,7 @@ export default function Projects() {
     }`;
 
     const BeforeProps = [
-        "Assassin's creed knife",
+        "Hidden blade",
         "Nerf gun",
         "Combination Lock",
         "Blow dart tube",
@@ -50,11 +49,11 @@ export default function Projects() {
         "Kali linux",
     ];
     const MachiningProps = [
-        "Hammer",
-        "Gears",
         "C clamp",
-        "Welding",
+        "Gears",
+        "Hammer",
         "Screw driver",
+        "V block",
         "Hole puncher",
     ];
     const DesignProps = [
@@ -104,7 +103,6 @@ export default function Projects() {
         });
     };
 
-
     return (
         <div
             className={`relative min-h-screen w-full flex justify-center inset-0 
@@ -152,7 +150,8 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="sticky top-[90%] flex justify-end">
-                        <div onClick={scrollToTop}
+                        <div
+                            onClick={scrollToTop}
                             className={`flex justify-center items-center rounded-2xl w-15 h-15 shadow-2xs active:shadow-inner hover:cursor-pointer ${
                                 darkMode
                                     ? "bg-drSecondaryDark/30 hover:bg-dfSecondaryDark/80"
@@ -164,13 +163,13 @@ export default function Projects() {
                                 ${
                                     darkMode
                                         ? "text-dfPrimaryDark"
-                                        : "text-drPrimary/80"
+                                        : "text-black/60 hover:text-black"
                                 }`}
                             ></i>
                         </div>
                     </div>
                     <Divider />
-                    <div id={`${makeId("Assassin's creed knife")}`}>
+                    <div id={`${makeId("Hidden blade")}`}>
                         <AssassinsCreedKnife />
                     </div>
                     <Divider />
@@ -194,39 +193,73 @@ export default function Projects() {
                         <KaliLinux />
                     </div>
                     <Divider />
-                    <div id={`${makeId("Hammer")}`}><Hammer /></div>
+                    <div id={`${makeId("C clamp")}`}>
+                        <Cclamp />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Gears")}`}><Gears /></div>
+                    <div id={`${makeId("Hammer")}`}>
+                        <Hammer />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("C clamp")}`}><Cclamp /></div>
+                    <div id={`${makeId("Gears")}`}>
+                        <Gears />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Welding")}`}><Welding /></div>
+                    <div id={`${makeId("Screw driver")}`}>
+                        <ScrewDriver />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Screw driver")}`}><ScrewDriver /></div>
+                    <div id={`${makeId("V block")}`}>
+                        <VBlock />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Hole puncher")}`}><HolePuncher /></div>
+                    <div id={`${makeId("Hole puncher")}`}>
+                        <HolePuncher />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Air engine")}`}><AirEngine /></div>
+                    <div id={`${makeId("Air engine")}`}>
+                        <AirEngine />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Glider")}`}><Glider /></div>
+                    <div id={`${makeId("Glider")}`}>
+                        <Glider />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Glasses")}`}><Glasses /></div>
+                    <div id={`${makeId("Glasses")}`}>
+                        <Glasses />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Plotter")}`}><Plotter /></div>
+                    <div id={`${makeId("Plotter")}`}>
+                        <Plotter />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Robot")}`}><Robot /></div>
+                    <div id={`${makeId("Robot")}`}>
+                        <Robot />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Storage tank")}`}><StorageTank /></div>
+                    <div id={`${makeId("Storage tank")}`}>
+                        <StorageTank />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Hand")}`}><Hand /></div>
+                    <div id={`${makeId("Hand")}`}>
+                        <Hand />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("This website")}`}><ThisWebsite /></div>
+                    <div id={`${makeId("This website")}`}>
+                        <ThisWebsite />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Image to machine code")}`}><ImageToMachineCode /></div>
+                    <div id={`${makeId("Image to machine code")}`}>
+                        <ImageToMachineCode />
+                    </div>
                     <Divider />
-                    <div id={`${makeId(".csv parser")}`}><CSVParser /></div>
+                    <div id={`${makeId(".csv parser")}`}>
+                        <CSVParser />
+                    </div>
                     <Divider />
-                    <div id={`${makeId("Robot controls")}`}><RobotControls /></div>
+                    <div id={`${makeId("Robot controls")}`}>
+                        <RobotControls />
+                    </div>
                     <Divider />
                 </div>
             </div>

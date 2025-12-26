@@ -8,9 +8,7 @@ export default function Gears() {
 
     return (
         <div className="mb-8">
-            <h2 className="text-3xl font-oxanium-bold mb-5">
-                Gears
-            </h2>
+            <h2 className="text-3xl font-oxanium-bold mb-5">Gears</h2>
             <div className="flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${
@@ -20,7 +18,9 @@ export default function Gears() {
                 <h3 className="text-2xl">Intro</h3>
             </div>
             <p>
-                
+                A machining project where the teacher gave each of us drawings
+                and instructions to then machine a pair of spur gears with a
+                stand using equipment in the machine shop.
             </p>
             <div className="mt-5 flex flex-row items-center">
                 <div
@@ -31,7 +31,8 @@ export default function Gears() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                
+                I learned, how to calculate the apropriate center distance,
+                select a cutter and cut gears using the horizontal mill.
             </p>
         </div>
     );

@@ -8,9 +8,7 @@ export default function Hammer() {
 
     return (
         <div className="mb-8">
-            <h2 className="text-3xl font-oxanium-bold mb-5">
-                Hammer
-            </h2>
+            <h2 className="text-3xl font-oxanium-bold mb-5">Hammer</h2>
             <div className="flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${
@@ -20,7 +18,9 @@ export default function Hammer() {
                 <h3 className="text-2xl">Intro</h3>
             </div>
             <p>
-                
+                A machining project where the teacher gave each of us drawings
+                and instructions to then machine a hammer using equipment in the
+                machine shop.
             </p>
             <div className="mt-5 flex flex-row items-center">
                 <div
@@ -31,7 +31,11 @@ export default function Hammer() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                
+                I learned how to do more advanced lathe work such as knurling,
+                long taper-passes, fillets, learned how to calibrate a 4 jaw chuck
+                with a dial indicator. Also worked with weaker materials such as
+                plasic and brass and used threaded inserts to attach them to the
+                hammer head, then coated it with black oxide to prevent rust.
             </p>
         </div>
     );

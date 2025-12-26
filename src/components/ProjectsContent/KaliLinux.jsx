@@ -42,8 +42,8 @@ export default function KaliLinux() {
                     Complete Metasploit System Hacking Tutorial!
                 </a>{" "}
                 Naturaly, I followed the tutorial, after which I created an .exe
-                file that, if opened, would give another computer full access
-                to everything on the first device.
+                file that, if opened, would give my computer full access
+                to the other device.
                 <br />
                 Then my brother and I tested that on our computers and it
                 unsurprisingly worked.

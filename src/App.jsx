@@ -32,7 +32,7 @@ function AppContent() {
 
 
   return (
-    <div className="absolute overflow-hidden w-screen h-screen inset-0 bg-[url('/Orange-landscape.jpg')] bg-cover bg-center z-0">
+    <div className="absolute w-screen h-screen inset-0 bg-[url('/Orange-landscape.jpg')] bg-cover bg-center z-0">
       <div className={`absolute inset-0 bg-[url('/Green-landscape.jpg')] bg-cover bg-center z-0
       transition-opacity duration-1000 ease-in-out pointer-events-none 
       ${darkMode ? "opacity-100" : "opacity-0"}`}>
@@ -41,12 +41,12 @@ function AppContent() {
       <div className="z-10 fixed inset-0 pointer-events-none"><Bgblur /></div>
       <div className="z-0 fixed inset-0 pointer-events-none"><BgDecorations /></div>
 
-      <div className={`z-40 absolute inset-x-0 top-0  w-screen h-5 
+      <div className={`z-40 absolute inset-x-0 top-0 w-screen h-5
                       ${(TabMode === "Home" || TabMode ==="none") ? (mobileMode ? "moveHeaderUp" : "moveHeaderDown") : "moveHeaderUp"}`}>
-        <div className="flex justify-center">
-          <div className="max-w-250 h-25">
-            <Header className="" />
-            <Navigation className={``} />
+        <div className="flex relative justify-center">
+          <div className={`h-25 ${mobileMode ? "max-w-90" : "max-w-250"}`}>
+            <Header />
+            <Navigation /> 
           </div>
         </div>
       </div>

@@ -123,6 +123,24 @@ export default function Projects() {
                             ))}
                         </div>
                     </div>
+                    <div className="sticky top-[90%] flex justify-end">
+                        <div
+                            className={`flex justify-center items-center rounded-2xl w-15 h-15 shadow-2xs active:shadow-inner hover:cursor-pointer ${
+                                darkMode
+                                    ? "bg-drSecondaryDark/30 hover:bg-dfSecondaryDark/80"
+                                    : "bg-drSecondary/30 hover:bg-dfSecondary/80"
+                            }`}
+                        >
+                            <i
+                                class={`text-4xl fa-solid fa-arrow-up
+                                ${
+                                    darkMode
+                                        ? "text-dfPrimaryDark"
+                                        : "text-drPrimary/80"
+                                }`}
+                            ></i>
+                        </div>
+                    </div>
                     <Divider />
                     <div id={`${makeId("Assassin's creed knife")}`}>
                         <AssassinsCreedKnife />

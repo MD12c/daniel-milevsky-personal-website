@@ -282,6 +282,7 @@
   --color-ltSecondary: var(--color-gray-300);
   --color-dfSecondary: var(--color-gray-400);
   --color-drSecondary: var(--color-gray-500);
+  --color-dr2Secondary: var(--color-gray-600);
   --color-navTab: #bac0ca;
 
   --color-lt2PrimaryDark: var(--color-teal-200);

@@ -25,7 +25,7 @@ export default function Header() {
 
   const iconStyle = "transition text-3xl cursor-pointer";
   return (
-    <div className={`flex mx-7 md:mx-9 py-4 justify-between items-center
+    <div className={`flex mx-0 md:mx-9 py-4 justify-between items-center
                     rounded-xl mt-1 lg:mx-10 
                     ${darkMode ? "bg-ltSecondaryDark/80" : "shadow bg-lt2Secondary/90"}`}>
       <div className="flex items-center whitespace-nowrap overflow-hidden">
@@ -35,8 +35,8 @@ export default function Header() {
         <h1 className={`font-oxanium font-bold
                       ${mobileMode ? "text-2xl" : "text-4xl"} 
                       ${darkMode ? "text-ltPrimaryDark" : "text-black"}`}>{`${(TabMode === "Home" || TabMode === "none") ? "" : `/`+TabMode}`}</h1>
-        <div className={`fastPulse m-1 w-0.5 
-                      ${(TabMode === "Home" || TabMode === "none") ? "" : "hidden"}
+        <div className={`fastPulse m-1 
+                      ${(TabMode === "Home" || TabMode === "none") ? "w-0.5" : "w-0"}
                       ${mobileMode ? "h-6" : "h-8"} 
                       ${darkMode ? "bg-dfPrimaryDark" : "bg-black"}`}></div>
       </div>

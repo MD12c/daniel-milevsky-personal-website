@@ -18,16 +18,18 @@ export default function Projects() {
     const projectTabStyle = `flex font-oxanium text-2xl justify-center items-center rounded-2xl bg-dfSecondary w-auto h-20
     hover:shadow-md hover:cursor-pointer px-2 active:shadow-inner
     ${
-        darkMode ? "bg-dfSecondaryDark hover:bg-ltPrimaryDark/30 active:bg-ltPrimaryDark/60" : "bg-dfSecondary hover:bg-ltPrimary/30 active:bg-ltPrimary/60"
+        darkMode
+            ? "bg-dfSecondaryDark hover:bg-ltPrimaryDark/30 active:bg-ltPrimaryDark/60"
+            : "bg-dfSecondary hover:bg-ltPrimary/30 active:bg-ltPrimary/60"
     }`;
 
     const BeforeProps = [
-        "Nerf gun",
         "Assassin's creed knife",
+        "Nerf gun",
         "Combination Lock",
         "Blow dart tube",
         "Simple calculator",
-        "Kali linux"
+        "Kali linux",
     ];
     const MachiningProps = [
         "Hammer",
@@ -44,24 +46,42 @@ export default function Projects() {
         "Plotter",
         "Robot",
         "Storage tank",
-        "Hand"
+        "Hand",
     ];
     const CodingProps = [
         "This website",
         "Image to machine code",
         ".csv parser",
-        "Robot controls"
+        "Robot controls",
     ];
     const categories = [
         { name: "Before College", items: BeforeProps },
         { name: "Machining", items: MachiningProps },
         { name: "Design", items: DesignProps },
-        { name: "Coding", items: CodingProps }
+        { name: "Coding", items: CodingProps },
     ];
 
+    const makeId = (str) => str.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+    const scrollToItem = (item) => {
+        const el = document.getElementById(makeId(item));
+        const container = el?.closest("[data-scroll-container]");
+
+        if (!el || !container) return;
+
+        const y = el.offsetTop - 150;
+
+        container.scrollTo({
+            top: y,
+            behavior: "smooth",
+        });
+    };
+
     return (
-         <div className={`absolute w-full h-full flex justify-center inset-0 
-            ${TabMode === "Projects" ? "TabIn" : "TabOut"}`}>
+        <div
+            className={`relative min-h-screen w-full flex justify-center inset-0 
+            ${TabMode === "Projects" ? "TabIn" : "TabOut"}`}
+        >
             <div
                 className={`lg:w-250 w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh] 
                             ${
@@ -71,7 +91,8 @@ export default function Projects() {
                             }`}
             >
                 <div
-                    className={`px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scrollbar-thin scrollbar-webkit
+                    data-scroll-container
+                    className={`px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"
@@ -82,11 +103,20 @@ export default function Projects() {
                         <div>
                             {categories.map((cat, ci) => (
                                 <div key={ci} className="pb-2">
-                                    <h2 className="text-xl font-oxanium-bold mb-2 mt-4">{cat.name}</h2>
+                                    <h2 className="text-xl font-oxanium-bold mb-2 mt-4">
+                                        {cat.name}
+                                    </h2>
                                     <div className="max-w-250 grid text-center w-[80vw] sm:w-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
                                         {cat.items.map((item, i) => (
-                                            <div key={i} className={projectTabStyle}
-                                            onClick={() => setProjectTab(item)}>{item}</div>
+                                            <div
+                                                key={i}
+                                                className={projectTabStyle}
+                                                onClick={() =>
+                                                    scrollToItem(item)
+                                                }
+                                            >
+                                                {item}
+                                            </div>
                                         ))}
                                     </div>
                                 </div>
@@ -94,17 +124,29 @@ export default function Projects() {
                         </div>
                     </div>
                     <Divider />
-                    <div><AssassinsCreedKnife /></div>
+                    <div id={`${makeId("Assassin's creed knife")}`}>
+                        <AssassinsCreedKnife />
+                    </div>
                     <Divider />
-                    <div><NerfGun /></div>
+                    <div id={`${makeId("Nerf gun")}`}>
+                        <NerfGun />
+                    </div>
                     <Divider />
-                    <div><CombinationLock /></div>
+                    <div id={`${makeId("Combination Lock")}`}>
+                        <CombinationLock />
+                    </div>
                     <Divider />
-                    <div><BlowDartTube /></div>
+                    <div id={`${makeId("Blow dart tube")}`}>
+                        <BlowDartTube />
+                    </div>
                     <Divider />
-                    <div><SimpleCalculator /></div>
+                    <div id={`${makeId("Simple calculator")}`}>
+                        <SimpleCalculator />
+                    </div>
                     <Divider />
-                    <div><KaliLinux /></div>
+                    <div id={`${makeId("Kali linux")}`}>
+                        <KaliLinux />
+                    </div>
                 </div>
             </div>
         </div>

@@ -31,11 +31,11 @@ export default function Hammer() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                I learned how to do more advanced lathe work such as knurling,
+                I learned how to do more advanced lathe work, such as knurling,
                 long taper-passes, fillets, learned how to calibrate a 4 jaw chuck
-                with a dial indicator. Also worked with weaker materials such as
-                plasic and brass and used threaded inserts to attach them to the
-                hammer head, then coated it with black oxide to prevent rust.
+                with a dial indicator. I also worked with weaker materials such as
+                plastic and brass and used threaded inserts to attach them to the
+                hammer head, then coated the handle with black oxide to prevent rust.
             </p>
         </div>
     );

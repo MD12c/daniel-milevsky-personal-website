@@ -31,7 +31,7 @@ export default function Gears() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                I learned, how to calculate the apropriate center distance,
+                I learned how to calculate the appropriate center distance,
                 select a cutter and cut gears using the horizontal mill.
             </p>
         </div>

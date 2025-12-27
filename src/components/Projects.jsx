@@ -18,6 +18,7 @@ import HolePuncher from "./ProjectsContent/HolePuncher";
 import AirEngine from "./ProjectsContent/AirEngine";
 import Glider from "./ProjectsContent/Glider";
 import Glasses from "./ProjectsContent/Glasses";
+import BikeFrame from "./ProjectsContent/BikeFrame";
 import Plotter from "./ProjectsContent/Plotter";
 import Robot from "./ProjectsContent/Robot";
 import StorageTank from "./ProjectsContent/StorageTank";
@@ -57,9 +58,10 @@ export default function Projects() {
         "Hole puncher",
     ];
     const DesignProps = [
-        "Air engine",
+        // "Air engine",
         "Glider",
         "Glasses",
+        "Bike frame",
         "Plotter",
         "Robot",
         "Storage tank",
@@ -106,7 +108,7 @@ export default function Projects() {
     return (
         <div
             className={`relative min-h-screen w-full flex justify-center inset-0 
-            ${TabMode === "Projects" ? "TabIn" : "TabOut"}`}
+            ${TabMode === "ProjectsJournal" ? "TabIn" : "TabOut"}`}
         >
             <div
                 className={`lg:w-250 w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh] 
@@ -216,10 +218,10 @@ export default function Projects() {
                     <div id={`${makeId("Hole puncher")}`}>
                         <HolePuncher />
                     </div>
-                    <Divider />
-                    <div id={`${makeId("Air engine")}`}>
+                    {/*<Divider />
+                     <div id={`${makeId("Air engine")}`}>
                         <AirEngine />
-                    </div>
+                    </div> */}
                     <Divider />
                     <div id={`${makeId("Glider")}`}>
                         <Glider />
@@ -227,6 +229,10 @@ export default function Projects() {
                     <Divider />
                     <div id={`${makeId("Glasses")}`}>
                         <Glasses />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Bike frame")}`}>
+                        <BikeFrame />
                     </div>
                     <Divider />
                     <div id={`${makeId("Plotter")}`}>

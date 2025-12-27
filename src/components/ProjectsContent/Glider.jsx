@@ -8,9 +8,7 @@ export default function Glider() {
 
     return (
         <div className="mb-8">
-            <h2 className="text-3xl font-oxanium-bold mb-5">
-                Glider
-            </h2>
+            <h2 className="text-3xl font-oxanium-bold mb-5">Glider</h2>
             <div className="flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${
@@ -20,7 +18,8 @@ export default function Glider() {
                 <h3 className="text-2xl">Intro</h3>
             </div>
             <p>
-                
+                In this project, we had to come up with a glider design that
+                would fly the longest distance.
             </p>
             <div className="mt-5 flex flex-row items-center">
                 <div
@@ -31,7 +30,7 @@ export default function Glider() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                
+                We learned how to calculate the aircraft components size and area.
             </p>
         </div>
     );

@@ -13,7 +13,7 @@ export default function Navigation() {
 
 	const NavContent = [
 		{ name: ["About me"], link: "AboutMe" },
-		{ name: ["Projects"], link: "Projects" },
+		{ name: ["Projects journal"], link: "ProjectsJournal" },
 		{ name: ["What's next"], link: "What's next" },
 		{ name: ["Gallery"], link: "Gallery" },
 		{ name: ["Contact me"], link: "ContactMe" }

@@ -8,9 +8,7 @@ export default function Plotter() {
 
     return (
         <div className="mb-8">
-            <h2 className="text-3xl font-oxanium-bold mb-5">
-                Plotter
-            </h2>
+            <h2 className="text-3xl font-oxanium-bold mb-5">Plotter</h2>
             <div className="flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${
@@ -20,7 +18,13 @@ export default function Plotter() {
                 <h3 className="text-2xl">Intro</h3>
             </div>
             <p>
-                
+                In this project we had to make something of our choice using
+                arduino microcontrollers. I decided to make a 2D printer that
+                draws letters and images. More details about the code is in the
+                Image to machine code section. Essentially, is has an X axis
+                carriage and a Y axis carriage moved by stepper motors and a pen
+                actuated on the Z axis by a servo. This mechanism can take in an
+                array of coordinates and plot them on to a piece of paper.
             </p>
             <div className="mt-5 flex flex-row items-center">
                 <div
@@ -31,7 +35,7 @@ export default function Plotter() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                
+                I learned the basics of CNC programing and got better at soldering.
             </p>
         </div>
     );

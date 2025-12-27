@@ -18,7 +18,7 @@ export default function ScrewDriver() {
                 <h3 className="text-2xl">Intro</h3>
             </div>
             <p>
-                For this one we filed down the tip of a steel rod and die cast
+                For this one, we filed down the tip of a steel rod and die-cast
                 it in aluminium.
             </p>
             <div className="mt-5 flex flex-row items-center">

@@ -22,7 +22,7 @@ export default function AboutMe() {
         { name: "Manual Machining", Progress: "75" },
         { name: "3D Printing", Progress: "75" },
         { name: "Electronics", Progress: "50" },
-        { name: "Math & Kinematics", Progress: "50" },
+        { name: "Math", Progress: "50" },
         { name: "Welding", Progress: "50" }
     ];
     const Coding = [

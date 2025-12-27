@@ -36,7 +36,7 @@ export default function Robot() {
             </div>
             <p>
                 I learned how to connect bluetooth to arduino via the HC-05 module, 
-                the inverse kinematics of a 2-bar linkage and that electronics need more space.
+                power management and that electronics need more space.
             </p>
         </div>
     );

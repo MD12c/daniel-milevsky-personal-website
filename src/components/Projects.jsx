@@ -64,7 +64,7 @@ export default function Projects() {
         "Bike frame",
         "Plotter",
         "Robot",
-        "Storage tank",
+        // "Storage tank",
         "Hand",
     ];
     const CodingProps = [
@@ -242,10 +242,10 @@ export default function Projects() {
                     <div id={`${makeId("Robot")}`}>
                         <Robot />
                     </div>
-                    <Divider />
+                    {/* <Divider />
                     <div id={`${makeId("Storage tank")}`}>
                         <StorageTank />
-                    </div>
+                    </div> */}
                     <Divider />
                     <div id={`${makeId("Hand")}`}>
                         <Hand />

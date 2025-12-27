@@ -56,9 +56,9 @@ function AppContent() {
           <Projects />
           <WhatIsToCome />
           <Gallery />
+          <ContactMe />
         </div>
       </div>
-        <ContactMe />
         <Footer />
       
     </div>

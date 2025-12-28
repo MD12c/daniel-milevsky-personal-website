@@ -45,7 +45,7 @@ export default function WhatIsToCome() {
             ${TabMode === "What's next" ? "TabIn" : "TabOut"}`}
         >
             <div
-                className={`lg:w-250 w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh] 
+                className={`lg:w-250 w-[95vw] h-[45vh] mt-3 rounded-2xl pt-[10vh] 
                             ${
                                 darkMode
                                     ? "bg-drSecondaryDark/80"
@@ -54,14 +54,38 @@ export default function WhatIsToCome() {
             >
                 <div
                     data-scroll-container
-                    className={`px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
+                    className={`px-4 pt-3 h-[35vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"
                                     : "bg-ltSecondary/50 text-black"
                             }`}
                 >
-                    <h1>What's next</h1>
+                    <div>
+                        <h2 className="text-xl font-oxanium-bold mb-2 mt-4">
+                            Plans
+                        </h2>
+                        <p>
+                            After dawson, I plan to go to Concordia University
+                            and get a bachelor's in mechanical engineering to
+                            later get a job as a research and development
+                            engineer or R&D in short.
+                            <br /> As of this website, I will continue to update
+                            it and add more stuff about future projects.
+                        </p>
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-oxanium-bold mb-2 mt-4">
+                            To do
+                        </h2>
+                        <div>
+                            <ul className="list-disc ml-5">
+                                <li>Learn OpenGL + do a small project to get familiar with it</li>
+                                <li>Try PCB design in KiCad using STM chips</li>
+                                <li>Make a 2nd version of the Plotter (using better hardware)</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -129,7 +129,7 @@ export default function Projects() {
                 >
                     <div className="flex flex-col items-center">
                         <h1 className="text-3xl font-oxanium-bold mb-4 mt-4">Big Projects</h1>
-                        <div className="flex flex-col sm:flex-row justify-center min:w-[80vw] sm:max-w-210 text-center gap-2">
+                        <div className="flex flex-col sm:flex-row justify-center w-[80vw] max-w-210 text-center gap-2">
                             <div className={projectTabStyle}>Plotter 2V will be here</div>
                             <div className={projectTabStyle}>Dawsons cap-stone will be here</div>
                             <div className={projectTabStyle}>OpenGL stuff will be here</div>

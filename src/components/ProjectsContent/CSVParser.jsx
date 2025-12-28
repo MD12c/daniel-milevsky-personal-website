@@ -35,8 +35,8 @@ export default function CSVParser() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                I learned the structure of a csv file and wrote cleaner code
-                than in the Image to Machine Code project.
+                I learned the structure of a csv file and wrote cleaner parsing
+                code than in the Image to Machine Code project.
             </p>
         </div>
     );

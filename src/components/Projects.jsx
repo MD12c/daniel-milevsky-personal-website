@@ -33,7 +33,7 @@ export default function Projects() {
     const { TabMode } = useContext(TabContext);
     const { ProjectTab, setProjectTab } = useContext(ProjectTabContext);
 
-    const projectTabStyle = `flex font-oxanium text-2xl justify-center items-center rounded-2xl bg-dfSecondary w-auto h-20
+    const projectTabStyle = `flex font-oxanium text-2xl justify-center items-center rounded-2xl bg-dfSecondary h-20
     hover:shadow-md hover:cursor-pointer px-2 active:shadow-inner
     ${
         darkMode
@@ -128,10 +128,17 @@ export default function Projects() {
                             }`}
                 >
                     <div className="flex flex-col items-center">
+                        <h1 className="text-3xl font-oxanium-bold mb-4 mt-4">Big Projects</h1>
+                        <div className="flex flex-col sm:flex-row justify-center min:w-[80vw] sm:max-w-210 text-center gap-2">
+                            <div className={projectTabStyle}>Plotter 2V will be here</div>
+                            <div className={projectTabStyle}>Dawsons cap-stone will be here</div>
+                            <div className={projectTabStyle}>OpenGL stuff will be here</div>
+                        </div>
+                        <h1 className="text-3xl font-oxanium-bold mb-2 mt-14">Small Projects + Assignments</h1>
                         <div>
                             {categories.map((cat, ci) => (
                                 <div key={ci} className="pb-2">
-                                    <h2 className="text-xl font-oxanium-bold mb-2 mt-4">
+                                    <h2 className="text-xl font-oxanium-bold mb-2 mt-2">
                                         {cat.name}
                                     </h2>
                                     <div className="max-w-250 grid text-center w-[80vw] sm:w-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">

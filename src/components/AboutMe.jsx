@@ -55,7 +55,7 @@ export default function AboutMe() {
                     <div className="w-full h-full">
                         <div className="flex justify-start items-center">
                             <div className="flex flex-col items-baseline ">
-                                {/* <h2 className="text-3xl text-center mb-3">About me</h2> */}
+                                <h2 className="text-xl font-oxanium-bold mb-2 mt-2">Who am I</h2>
                                 <p className="2xl:mx-10">
                                     Hi, I'm Daniel Milevsky, a student and a
                                     maker passionate about creating and learning
@@ -84,7 +84,7 @@ export default function AboutMe() {
                                 </p>
                             </div>
                         </div>
-                        <p className="mt-5 2xl:mt-20">My experiences:</p>
+                        <h2 className="text-xl font-oxanium-bold mb-2 mt-8">My experiances</h2>
                         <div className="flex flex-row flex-wrap mt-5 justify-center gap-15 2xl:justify-between 2xl:mx-10 2xl:flex-nowrap">
                             <div className="inset-0 mb-10">
                                 <p>Software</p>

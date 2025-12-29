@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { TabContext } from "../context/TabContext";
 import { DarkModeContext } from "../context/DarkModeContext";
 import { ProjectTabContext } from "../context/ProjectTabContext";
+import { MobileContext } from '../context/MobileContext'
 import NerfGun from "./ProjectsContent/NerfGun";
 import AssassinsCreedKnife from "./ProjectsContent/AssassinsCreedKnife";
 import Divider from "./ProjectsContent/Divider";
@@ -32,6 +33,7 @@ export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
     const { TabMode } = useContext(TabContext);
     const { ProjectTab, setProjectTab } = useContext(ProjectTabContext);
+      const { mobileMode } = useContext(MobileContext);
 
     const projectTabStyle = `flex font-oxanium text-2xl justify-center items-center rounded-2xl bg-dfSecondary h-20
     hover:shadow-md hover:cursor-pointer px-2 active:shadow-inner
@@ -129,10 +131,10 @@ export default function Projects() {
                 >
                     <div className="flex flex-col items-center">
                         <h1 className="text-3xl font-oxanium-bold mb-4 mt-4">Big Projects</h1>
-                        <div className="flex flex-col sm:flex-row justify-center w-[80vw] max-w-210 text-center gap-2">
-                            <div className={projectTabStyle}>Plotter 2V will be here</div>
-                            <div className={projectTabStyle}>Dawsons cap-stone will be here</div>
-                            <div className={projectTabStyle}>OpenGL stuff will be here</div>
+                        <div className="flex flex-col md:flex-row justify-center w-[80vw] max-w-210 text-center gap-2 text-nowrap">
+                            <div className={projectTabStyle+" md:w-80"}>Plotter 2V{!mobileMode && <br />} will be here</div>
+                            <div className={projectTabStyle+" md:w-80"}>Dawsons cap-stone{!mobileMode && <br />} will be here</div>
+                            <div className={projectTabStyle+" md:w-80"}>OpenGL stuff{!mobileMode && <br />} will be here</div>
                         </div>
                         <h1 className="text-3xl font-oxanium-bold mb-2 mt-14">Small Projects + Assignments</h1>
                         <div>

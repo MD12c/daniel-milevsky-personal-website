@@ -31,8 +31,8 @@ export default function KaliLinux() {
                     PowerCert Animated Videos
                 </a>{" "}
                 that explained what was going on under the hood, when I came
-                across hacking channels. One video in particular blew my mind about
-                how easy it is to create malware:{" "}
+                across hacking channels. One video in particular blew my mind
+                about how easy it is to create malware:{" "}
                 <a
                     className={`underline underline-offset-1 ${
                         darkMode ? "text-dfPrimaryDark" : "text-dfPrimary"
@@ -42,11 +42,15 @@ export default function KaliLinux() {
                     Complete Metasploit System Hacking Tutorial!
                 </a>{" "}
                 Naturaly, I followed the tutorial, after which I created an .exe
-                file that, if opened, would give my computer full access
-                to the other device.
+                file that, if opened, would give my computer full access to the
+                other device.
                 <br />
                 Then my brother and I tested that on our computers and it
-                unsurprisingly worked.
+                unsurprisingly worked. I was able to open/kill any process and
+                open/copy/delete any file.
+                <br />
+                After that I experimented with hydra password cracker and setup
+                tor browser to use as a proxy.
             </p>
             <div className="mt-5 flex flex-row items-center">
                 <div
@@ -58,8 +62,13 @@ export default function KaliLinux() {
             </div>
             <p>
                 I learned the basics of networking, setting up a virtual
-                machine, the basics of linux OS and the importance of cyber-security.
+                machine, the basics of linux OS and the importance of
+                cyber-security.
             </p>
+            <span className="font-bold">
+                NOTE: Everything I did was legal and was only fueled by
+                curiosity and NOT malicious intent.{" "}
+            </span>
         </div>
     );
 }

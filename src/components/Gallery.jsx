@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { TabContext } from "../context/TabContext";
 import { DarkModeContext } from "../context/DarkModeContext";
+import ImageLoader from "./ProjectsContent/ImageLoader";
 
 export default function Gallery() {
     const { darkMode } = useContext(DarkModeContext);
@@ -39,6 +40,44 @@ export default function Gallery() {
         });
     };
 
+    var keyIndex = 0;
+    function makeKey() {
+        () => keyIndex++;
+    }
+
+    const photos = [
+        "hiddenblade",
+        "blowdart/blowdart2",
+        "blowdart/blowdart3",
+        "lock/lock",
+        "lock/lock2",
+        "nerfgun",
+        "Cclamp/Cclamp",
+        "Cclamp/Cclamp2",
+        "gears/gears",
+        "gears/gears2",
+        "hammer/hammer3",
+        "hammer/hammer",
+        "hammer/hammer2",
+        "screwdriver/screwdriver",
+        "screwdriver/screwdriver2",
+        "Vblock/Vblock2",
+        "Vblock/Vblock",
+        "punchpress/punchpress2",
+        "punchpress/punchpress",
+        "glider/glider",
+        // "glider/glider2",
+        // "glider/glider3",
+        "plotter",
+        "robot/robot2",
+        "robot/robot3",
+        // "robot/robot4",
+        "hand/hand2",
+        "hand/hand3",
+        "hand/hand",
+        "welds"
+    ];
+
     return (
         <div
             className={`absolute min-h-screen w-full flex justify-center inset-0 
@@ -61,7 +100,14 @@ export default function Gallery() {
                                     : "bg-ltSecondary/50 text-black"
                             }`}
                 >
-                    <h1>gallery</h1>
+                    {/* prettier-ignore */}
+                        <div className="flex flex-row flex-wrap gap-3 mx-5 my-10 justify-center">
+                            {photos.map((item, i) => (
+                                <div className="lg:w-70 w-full">
+                                    <ImageLoader imgAdress={item+".jpg"} key={i} />
+                                </div>
+                            ))}
+                        </div>
                 </div>
             </div>
         </div>

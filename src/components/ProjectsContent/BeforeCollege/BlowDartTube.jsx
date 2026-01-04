@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function BlowDartTube() {
     const { darkMode } = useContext(DarkModeContext);
@@ -19,9 +20,19 @@ export default function BlowDartTube() {
             </div>
             <p>
                 This was a small project made as a sequel to the nerf gun. Using
-                a barrel designed for the same darts and a larger opening for the
-                mouth.
+                a barrel designed for the same darts and a larger opening for
+                the mouth.
             </p>
+            <div className="flex flex-row gap-x-3 mx-5 my-10">
+                <ImageLoader
+                    imgAdress={"blowdart/blowdart.jpg"}
+                    key={ProjectTab}
+                />
+                <ImageLoader
+                    imgAdress={"blowdart/blowdart3.jpg"}
+                    key={ProjectTab}
+                />
+            </div>
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

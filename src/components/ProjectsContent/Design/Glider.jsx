@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function Glider() {
     const { darkMode } = useContext(DarkModeContext);
@@ -21,6 +22,16 @@ export default function Glider() {
                 In this project, we had to come up with a glider design that
                 would fly the longest distance.
             </p>
+            <div className="my-10 mx-5">
+                <ImageLoader imgAdress={"glider/glider.jpg"} key={ProjectTab} />
+                <div className="flex flex-col gap-3 sm:flex-row mt-3">
+                    <ImageLoader
+                        imgAdress={"glider/glider3.jpg"}
+                        key={ProjectTab}
+                    />
+                    <ImageLoader imgAdress={"glider/glider4.jpg"} key={ProjectTab} />
+                </div>
+            </div>
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

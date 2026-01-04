@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function CombinationLock() {
     const { darkMode } = useContext(DarkModeContext);
@@ -24,6 +25,11 @@ export default function CombinationLock() {
                 padlock with 4 rotary dials as a step up from my previous
                 projects.
             </p>
+            <div className="flex flex-col gap-3 md:flex-row mt-3">
+                <ImageLoader imgAdress={"lock/lock4.jpg"} key={ProjectTab} />
+                <ImageLoader imgAdress={"lock/lock2.jpg"} key={ProjectTab}/>
+                <ImageLoader imgAdress={"lock/lock.jpg"} key={ProjectTab} />
+            </div>
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

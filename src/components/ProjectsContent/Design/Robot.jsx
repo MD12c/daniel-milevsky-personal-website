@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function Robot() {
     const { darkMode } = useContext(DarkModeContext);
@@ -22,10 +23,23 @@ export default function Robot() {
                 inside a 25cm x 25cm by 40cm high box that could take a floating
                 ball inside a basket full of water and put it into a small
                 container. For this project, we had a tight deadline of 5 weeks
-                that unfortunately intersected with our exam period, giving us ~2
-                weeks for everything. For more details on code, go to the robot
-                controls section.
+                that unfortunately intersected with our exam period, giving us
+                ~2 weeks for everything. For more details on code, go to the
+                robot controls section.
             </p>
+            <div className="my-10 mx-5">
+                <div className="flex flex-col gap-3 lg:flex-row mt-3">
+                    <ImageLoader
+                        imgAdress={"robot/robot2.jpg"}
+                        key={ProjectTab}
+                    />
+                    <ImageLoader
+                        imgAdress={"robot/robot3.jpg"}
+                        key={ProjectTab}
+                    />
+                </div>
+            </div>
+            <ImageLoader imgAdress={"robot/robot4.jpg"} key={ProjectTab} />
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${
@@ -35,8 +49,8 @@ export default function Robot() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                I learned how to connect bluetooth to arduino via the HC-05 module, 
-                power management and that electronics need more space.
+                I learned how to connect bluetooth to arduino via the HC-05
+                module, power management and that electronics need more space.
             </p>
         </div>
     );

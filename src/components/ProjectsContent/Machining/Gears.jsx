@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function Gears() {
     const { darkMode } = useContext(DarkModeContext);
@@ -22,6 +23,13 @@ export default function Gears() {
                 and instructions to then machine a pair of spur gears with a
                 stand using equipment in the machine shop.
             </p>
+            <div className="flex flex-col gap-3 sm:flex-row mt-3">
+                <ImageLoader
+                    imgAdress={"gears/gears2.jpg"}
+                    key={ProjectTab}
+                />
+                <ImageLoader imgAdress={"gears/gears.jpg"} key={ProjectTab} />
+            </div>
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${
@@ -31,7 +39,7 @@ export default function Gears() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                I learned how to calculate the appropriate center distance,
+                I learned how to calculate the appropriate gear center distance,
                 select a cutter and cut gears using the horizontal mill.
             </p>
         </div>

@@ -27,7 +27,7 @@ export default function AboutMe() {
     ];
     const Coding = [
         { name: "C++", Progress: "50" },
-        { name: "Arduino C++", Progress: "50" },
+        { name: "Arduino ", Progress: "50" },
         { name: "C#", Progress: "25" },
         { name: "React + Tailwind", Progress: "25" },
         { name: "Html + CSS", Progress: "25" }

@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function AssassinsCreedKnife() {
     const { darkMode } = useContext(DarkModeContext);
@@ -8,9 +9,7 @@ export default function AssassinsCreedKnife() {
 
     return (
         <div className="mb-8">
-            <h2 className="text-3xl font-oxanium-bold mb-5">
-                Hidden blade
-            </h2>
+            <h2 className="text-3xl font-oxanium-bold mb-5">Hidden blade</h2>
             <div className="flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${
@@ -24,6 +23,9 @@ export default function AssassinsCreedKnife() {
                 decided to make an iconic knife for my brother from the video
                 game Assassin's Creed which he was playing at the time.
             </p>
+            <div className="my-10">
+                <ImageLoader imgAdress={"hiddenblade.jpg"} key={ProjectTab} />
+            </div>
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

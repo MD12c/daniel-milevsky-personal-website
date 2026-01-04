@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function Cclamp() {
     const { darkMode } = useContext(DarkModeContext);
@@ -22,6 +23,15 @@ export default function Cclamp() {
                 each of us drawings and instructions to then machine a C clamp
                 using equipment in the machine shop.
             </p>
+            <div className="my-10 mx-5">
+                <div className="flex flex-col gap-3 sm:flex-row mt-3">
+                    <ImageLoader
+                        imgAdress={"Cclamp/Cclamp.jpg"}
+                        key={ProjectTab}
+                    />
+                    <ImageLoader imgAdress={"Cclamp/Cclamp2.jpg"} key={ProjectTab} />
+                </div>
+            </div>
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

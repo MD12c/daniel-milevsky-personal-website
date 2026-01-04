@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function ScrewDriver() {
     const { darkMode } = useContext(DarkModeContext);
@@ -19,8 +20,16 @@ export default function ScrewDriver() {
             </div>
             <p>
                 For this one, we filed down the tip of a steel rod and die-cast
-                it in aluminium.
+                the handle in aluminium.
             </p>
+            <div className="flex flex-col gap-3 sm:flex-row mt-3">
+                <ImageLoader imgAdress={"screwdriver/screwdriver.jpg"} key={ProjectTab} />
+                <ImageLoader imgAdress={"screwdriver/screwdriver2.jpg"} key={ProjectTab} />
+            </div>
+                <div className="flex flex-col gap-3 sm:flex-row mt-3">
+                <ImageLoader imgAdress={"screwdriver/screwdriver3.jpg"} key={ProjectTab} />
+                <ImageLoader imgAdress={"screwdriver/screwdriver4.jpg"} key={ProjectTab} />
+            </div>
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

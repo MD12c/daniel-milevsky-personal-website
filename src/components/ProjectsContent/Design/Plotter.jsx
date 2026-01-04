@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function Plotter() {
     const { darkMode } = useContext(DarkModeContext);
@@ -26,6 +27,9 @@ export default function Plotter() {
                 actuated on the Z axis by a servo. This mechanism can take in an
                 array of coordinates and plot them on to a piece of paper.
             </p>
+            <div className="my-10 mx-5">
+                <ImageLoader imgAdress={"plotter.jpg"} key={ProjectTab} />
+            </div>
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

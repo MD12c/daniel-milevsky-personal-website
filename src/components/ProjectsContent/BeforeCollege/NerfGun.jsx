@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function NerfGun() {
     const { darkMode } = useContext(DarkModeContext);
@@ -18,6 +19,9 @@ export default function NerfGun() {
                 a kid, I was facinated by the mechansim of nerf guns, so I
                 decided to attempt to build one of my own with peacefull intent.
             </p>
+            <div className="my-10 mx-5">
+                <ImageLoader imgAdress={"nerfgun.jpg"} key={ProjectTab} />
+            </div>
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function HolePuncher() {
     const { darkMode } = useContext(DarkModeContext);
@@ -22,6 +23,10 @@ export default function HolePuncher() {
                 and instructions to then machine a hole puncher using equipment
                 in the machine shop.
             </p>
+            <div className="flex flex-col gap-3 sm:flex-row mt-3">
+                <ImageLoader imgAdress={"punchpress/punchpress2.jpg"} key={ProjectTab} />
+                <ImageLoader imgAdress={"punchpress/punchpress.jpg"} key={ProjectTab} />
+            </div>
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

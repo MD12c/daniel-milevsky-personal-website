@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { TabContext } from "../context/TabContext";
 import { DarkModeContext } from "../context/DarkModeContext";
 import ImageLoader from "./ProjectsContent/ImageLoader";
+import VideoLoader from "./VideoLoader";
 
 export default function Gallery() {
     const { darkMode } = useContext(DarkModeContext);
@@ -66,16 +67,25 @@ export default function Gallery() {
         "punchpress/punchpress2",
         "punchpress/punchpress",
         "glider/glider",
-        // "glider/glider2",
-        // "glider/glider3",
         "plotter",
         "robot/robot2",
         "robot/robot3",
-        // "robot/robot4",
         "hand/hand2",
         "hand/hand3",
         "hand/hand",
-        "welds"
+        "slot",
+        "CADlife",
+        "self3Dprint",
+    ];
+    const videosVert = [ 
+        "mill",
+        "No/pneumaticsC1No",
+        "No/pneumaticsC2No",
+        "No/pneumaticsC3No",
+        "No/pneumaticsC4No",
+    ];
+    const videosHor = [
+        "gears","nerfgun","nerfgun2","punchpress","No/fluidcimNo","No/CclampNo",
     ];
 
     return (
@@ -101,13 +111,31 @@ export default function Gallery() {
                             }`}
                 >
                     {/* prettier-ignore */}
+                    <div>
                         <div className="flex flex-row flex-wrap gap-3 mx-5 my-10 justify-center">
                             {photos.map((item, i) => (
-                                <div className="lg:w-70 w-full">
+                                <div className="lg:w-70 md:w-60 w-full">
                                     <ImageLoader imgAdress={item+".jpg"} key={i} />
                                 </div>
                             ))}
                         </div>
+                    </div>
+                    <div>
+                        <div className="flex flex-row flex-wrap gap-3 mx-5 my-10 justify-center">
+                            {videosHor.map((video, h) => (
+                                <div className="lg:w-70 md:w-60 w-full" key={h}>
+                                    <VideoLoader videoAdress={video + ".mp4"} />
+                                </div>
+                            ))}
+                        </div>
+                        <div className="flex flex-row flex-wrap gap-3 mx-5 my-10 justify-center">
+                            {videosVert.map((video, v) => (
+                                <div className="lg:w-70 md:w-60 w-full" key={v}>
+                                    <VideoLoader videoAdress={video + ".mp4"} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

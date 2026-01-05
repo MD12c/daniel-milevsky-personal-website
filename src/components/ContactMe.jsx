@@ -45,7 +45,7 @@ export default function ContactMe() {
             ${TabMode === "ContactMe" ? "TabIn" : "TabOut"}`}
         >
             <div
-                className={`lg:w-250 w-[95vw] h-[20vh] mt-3 rounded-2xl pt-[10vh] 
+                className={`lg:w-250 w-[95vw] h-[23vh] mt-3 rounded-2xl pt-[10vh] 
                             ${
                                 darkMode
                                     ? "bg-drSecondaryDark/80"
@@ -54,7 +54,7 @@ export default function ContactMe() {
             >
                 <div
                     data-scroll-container
-                    className={`px-4 pt-3 h-[10vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
+                    className={`px-4 pt-3 h-[13vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"
@@ -82,6 +82,21 @@ export default function ContactMe() {
                                     href="https://www.linkedin.com/in/daniel-milevsky-467914332/"
                                 >
                                     Daniel Milevsky
+                                </a>
+                            </h2>
+                            <h2>
+                                <span className="font-oxanium-bold">
+                                    github:
+                                </span>{" "}
+                                <a
+                                    className={`underline underline-offset-1 ${
+                                        darkMode
+                                            ? "text-dfPrimaryDark"
+                                            : "text-dfPrimary"
+                                    }`}
+                                    href="https://github.com/MD12c"
+                                >
+                                    MD12c
                                 </a>
                             </h2>
                         </div>

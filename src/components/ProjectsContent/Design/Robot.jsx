@@ -28,18 +28,17 @@ export default function Robot() {
                 robot controls section.
             </p>
             <div className="my-10 mx-5">
-                <div className="flex flex-col gap-3 lg:flex-row mt-3">
-                    <ImageLoader
-                        imgAdress={"robot/robot2.jpg"}
-                        key={ProjectTab}
-                    />
-                    <ImageLoader
-                        imgAdress={"robot/robot3.jpg"}
-                        key={ProjectTab}
-                    />
+                <div className="flex flex-col gap-3 sm:flex-row mt-3">
+                    <ImageLoader imgAdress={"robot/robot2.jpg"} key={ProjectTab} />
+                    <ImageLoader imgAdress={"robot/robot3.jpg"} key={ProjectTab} />
+                </div>
+                <div className="flex flex-col gap-3 sm:flex-row mt-3">
+                    <ImageLoader imgAdress={"robot/robotCAD.jpg"} key={ProjectTab} />
+                    <div className="w-full flex items-center">
+                        <ImageLoader imgAdress={"robot/robot4.jpg"} key={ProjectTab} />
+                    </div>
                 </div>
             </div>
-            <ImageLoader imgAdress={"robot/robot4.jpg"} key={ProjectTab} />
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

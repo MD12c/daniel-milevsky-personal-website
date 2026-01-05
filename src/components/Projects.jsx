@@ -21,7 +21,6 @@ import Glasses from "./ProjectsContent/Design/Glasses";
 import BikeFrame from "./ProjectsContent/Design/BikeFrame";
 import Plotter from "./ProjectsContent/Design/Plotter";
 import Robot from "./ProjectsContent/Design/Robot";
-import StorageTank from "./ProjectsContent/Design/StorageTank";
 import Hand from "./ProjectsContent/Design/Hand";
 import ThisWebsite from "./ProjectsContent/Coding/ThisWebsite";
 import ImageToMachineCode from "./ProjectsContent/Coding/ImageToMachineCode";
@@ -32,7 +31,7 @@ export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
     const { TabMode } = useContext(TabContext);
     const { ProjectTab, setProjectTab } = useContext(ProjectTabContext);
-      const { mobileMode } = useContext(MobileContext);
+    const { mobileMode } = useContext(MobileContext);
 
     const projectTabStyle = `flex font-oxanium text-2xl justify-center items-center rounded-2xl bg-dfSecondary h-20
     hover:shadow-md hover:cursor-pointer px-2 active:shadow-inner
@@ -226,10 +225,6 @@ export default function Projects() {
                     <div id={`${makeId("Hole puncher")}`}>
                         <HolePuncher />
                     </div>
-                    {/*<Divider />
-                     <div id={`${makeId("Air engine")}`}>
-                        <AirEngine />
-                    </div> */}
                     <Divider />
                     <div id={`${makeId("Glider")}`}>
                         <Glider />
@@ -250,10 +245,6 @@ export default function Projects() {
                     <div id={`${makeId("Robot")}`}>
                         <Robot />
                     </div>
-                    {/* <Divider />
-                    <div id={`${makeId("Storage tank")}`}>
-                        <StorageTank />
-                    </div> */}
                     <Divider />
                     <div id={`${makeId("Hand")}`}>
                         <Hand />

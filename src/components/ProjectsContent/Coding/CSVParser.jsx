@@ -23,8 +23,8 @@ export default function CSVParser() {
                 format large bill of materials in the future. The code takes a
                 csv file with unlimited rows and fixed amount of columns
                 indicated by: const int MAX_COLLUMNS and column names inside the
-                struct. Then, it prints the row# and col# with its content to
-                the terminal.
+                struct and the switch. Then, it prints the row# and col# with
+                its content to the terminal.
             </p>
             <div className="mt-5 flex flex-row items-center">
                 <div

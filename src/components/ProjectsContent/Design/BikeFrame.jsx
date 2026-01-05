@@ -1,6 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
+import ImageLoader from "../ImageLoader";
 
 export default function BikeFrame() {
     const { darkMode } = useContext(DarkModeContext);
@@ -21,6 +22,7 @@ export default function BikeFrame() {
                 In this project we had to come up with a unique design for a
                 bike frame using standard bike tubes and brazing assembly.
             </p>
+            <ImageLoader imgAdress={"bikeframe.jpg"} key={ProjectTab} />
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

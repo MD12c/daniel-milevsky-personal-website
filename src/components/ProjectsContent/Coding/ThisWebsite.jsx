@@ -19,8 +19,18 @@ export default function ThisWebsite() {
             </div>
             <p>
                 This website was built during my winter break to display my
-                portfolio and document my later projects. I was familiar with
-                html and css before, but React and Tailwind are still new to me.
+                portfolio and document my later projects. Although I was
+                familiar with html and css before, React and Tailwind are a new
+                experiance to me. The code is public on my github click
+                {" "}<a
+                    href="https://github.com/MD12c/daniel-milevsky-personal-website"
+                    className={`underline underline-offset-1 ${
+                        darkMode ? "text-dfPrimaryDark" : "text-dfPrimary"
+                    }`}
+                >
+                    here
+                </a>{" "}
+                to see it.
             </p>
             <div className="mt-5 flex flex-row items-center">
                 <div
@@ -31,8 +41,8 @@ export default function ThisWebsite() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                I learned how to use Vite, React, Tailwind and a little of
-                javascript.
+                I learned how to use Vite, React, Tailwind, npm package manager,
+                css animations, basics of git and a little of javascript.
             </p>
         </div>
     );

@@ -24,13 +24,14 @@ export default function Hand() {
                 class. I did what I do best and designed a wrist with movable
                 fingers that are controlled by strings.
             </p>
+            {/* prettier-ignore */}
             <div className="my-10 mx-5">
-                <ImageLoader imgAdress={"hand/hand2.jpg"} key={ProjectTab} />
                 <div className="flex flex-col gap-3 sm:flex-row mt-3">
-                    <ImageLoader
-                        imgAdress={"hand/hand.jpg"}
-                        key={ProjectTab}
-                    />
+                    <ImageLoader imgAdress={"hand/hand2.jpg"} key={ProjectTab} />
+                    <ImageLoader imgAdress={"hand/rukaCAD.jpg"} key={ProjectTab} />
+                </div>
+                <div className="flex flex-col gap-3 sm:flex-row mt-3">
+                    <ImageLoader imgAdress={"hand/hand.jpg"} key={ProjectTab} />
                     <ImageLoader imgAdress={"hand/hand3.jpg"} key={ProjectTab} />
                 </div>
             </div>

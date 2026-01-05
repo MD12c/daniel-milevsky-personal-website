@@ -23,12 +23,14 @@ export default function Glider() {
                 would fly the longest distance.
             </p>
             <div className="my-10 mx-5">
-                <ImageLoader imgAdress={"glider/glider.jpg"} key={ProjectTab} />
+                {/* prettier-ignore */}
                 <div className="flex flex-col gap-3 sm:flex-row mt-3">
-                    <ImageLoader
-                        imgAdress={"glider/glider3.jpg"}
-                        key={ProjectTab}
-                    />
+                    <ImageLoader imgAdress={"glider/glider.jpg"} key={ProjectTab} />
+                    <ImageLoader imgAdress={"glider/gliderCAD.jpg"} key={ProjectTab} />
+                </div>
+                {/* prettier-ignore */}
+                <div className="flex flex-col gap-3 sm:flex-row mt-3">
+                    <ImageLoader imgAdress={"glider/glider3.jpg"} key={ProjectTab} />
                     <ImageLoader imgAdress={"glider/glider4.jpg"} key={ProjectTab} />
                 </div>
             </div>
@@ -41,7 +43,8 @@ export default function Glider() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                We learned how to calculate the aircraft components size and area.
+                We learned how to calculate the aircraft components size and
+                area.
             </p>
         </div>
     );

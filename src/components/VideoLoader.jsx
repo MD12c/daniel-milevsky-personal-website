@@ -5,7 +5,7 @@ export default function VideoLoader({ videoAdress }) {
                 <video
                     className="rounded-2xl"
                     width="320" height="240"
-                    muted controls
+                    controls
                 >
                     <source 
                     src={`/daniel-milevsky-personal-website/portfolio-img/videos/${videoAdress}`}

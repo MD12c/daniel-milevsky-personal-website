@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useRef } from "react";
 import { TabContext } from "../context/TabContext";
 import { DarkModeContext } from "../context/DarkModeContext";
 import ImageLoader from "./ProjectsContent/ImageLoader";
@@ -16,35 +16,14 @@ export default function Gallery() {
             : "bg-dfSecondary hover:bg-ltPrimary/30 active:bg-ltPrimary/60"
     }`;
 
-    const makeId = (str) => str.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    const scrollRef = useRef(null);
 
-    const scrollToItem = (item) => {
-        const el = document.getElementById(makeId(item));
-        const container = el?.closest("[data-scroll-container]");
-
-        if (!el || !container) return;
-
-        const y = el.offsetTop - 150;
-
-        container.scrollTo({
-            top: y,
-            behavior: "smooth",
-        });
-    };
     const scrollToTop = () => {
-        const container = document.querySelector("[data-scroll-container]");
-        if (!container) return;
-
-        container.scrollTo({
+        scrollRef.current?.scrollTo({
             top: 0,
             behavior: "smooth",
         });
     };
-
-    var keyIndex = 0;
-    function makeKey() {
-        () => keyIndex++;
-    }
 
     const photos = [
         "hiddenblade",
@@ -66,10 +45,15 @@ export default function Gallery() {
         "Vblock/Vblock",
         "punchpress/punchpress2",
         "punchpress/punchpress",
+        "glasses",
         "glider/glider",
-        "plotter",
+        "glider/gliderCAD",
+        "plotter/plotterCAD",
+        "plotter/plotter",
         "robot/robot2",
         "robot/robot3",
+        "robot/robotCAD",
+        "hand/rukaCAD",
         "hand/hand2",
         "hand/hand3",
         "hand/hand",
@@ -102,8 +86,9 @@ export default function Gallery() {
                             }`}
             >
                 <div
+                    ref={scrollRef}
                     data-scroll-container
-                    className={`px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
+                    className={`relative px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"
@@ -111,8 +96,29 @@ export default function Gallery() {
                             }`}
                 >
                     {/* prettier-ignore */}
+                    
+                        <div className="sticky top-[90%]"><div className="w-full h-0 overflow-visible flex justify-end">
+                            <div
+                                onClick={scrollToTop}
+                                className={`flex justify-center items-center rounded-2xl w-15 h-15 shadow-2xs active:shadow-inner hover:cursor-pointer ${
+                                    darkMode
+                                        ? "bg-drSecondaryDark/30 hover:bg-dfSecondaryDark/80"
+                                        : "bg-drSecondary/30 hover:bg-dfSecondary/80"
+                                }`}
+                            >
+                                <i
+                                    className={`text-4xl fa-solid fa-arrow-up
+                                    ${
+                                        darkMode
+                                            ? "text-ltPrimaryDark"
+                                            : "text-black/60 hover:text-black"
+                                    }`}
+                                ></i>
+                            </div>
+                        </div>
+                    </div>
                     <div>
-                        <div className="flex flex-row flex-wrap gap-3 mx-5 my-10 justify-center">
+                        <div className="flex flex-row flex-wrap gap-3 mx-5 my-10 justify-center items-center">
                             {photos.map((item, i) => (
                                 <div className="lg:w-70 md:w-60 w-full">
                                     <ImageLoader imgAdress={item+".jpg"} key={i} />

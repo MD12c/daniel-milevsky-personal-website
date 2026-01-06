@@ -26,16 +26,16 @@ export default function Navigation() {
 		<div className={`overflow-hidden pb-10 flex justify-center ${(TabMode === "Home" || TabMode ==="none") ? (mobileMode ? "navigationDownMobile" : "navigationDown") : (mobileMode ? "navigationUpMobile" : "navigationUp")}`}>
 			<div className={`navigationAppearence w-[90vw] lg:w-200 2xl:w-250 2xl:gap-x-5 mt-0 mx-3 flex flex-col md:flex-row flex-wrap justify-evenly`}>
 				{NavContent.map((item, i) => (
-					<div key={i} className={cardStyle + `${darkMode ? "hover:bg-ltSecondaryDark/90 bg-ltSecondaryDark/50" : "hover:bg-[#dadfe8] bg-navTab/70"}`}
+					<div key={i} className={cardStyle + `${darkMode ? "hover:bg-dfSecondaryDark bg-dfSecondaryDark/70" : "hover:bg-[#dadfe8] bg-navTab/70"}`}
 						onMouseEnter={() => setHover(i)} 
 						onMouseLeave={() => setHover(null)}
 						onClick={() => setTabMode(item.link)}>
 						<div className={`md:translate-x-25 w-60 h-4 rotate-45 translate-x-30
 										${darkMode ? "bg-ltPrimaryDark" : "bg-dfPrimary"}
 										${hover === i ? "ribbonAppearance" : "ribbonDisappearance"}`} />
-						<div className={`md:translate-x-25 w-60 h-2 bg-drSecondary rotate-45 translate-x-25
+						<div className={`md:translate-x-25 w-60 h-2 rotate-45 translate-x-25
 										${hover === i ? "ribbonAppearance" : "ribbonDisappearance"}
-										${darkMode ? "bg-slate-950" : "bg-drSecondary"}`} />
+										${darkMode ? "bg-black" : "bg-drSecondary"}`} />
 						<h2 className={textStyle + `${darkMode ? "text-ltPrimaryDark" : "text-black"}`}>{item.name}</h2>
 					</div>
 				))}

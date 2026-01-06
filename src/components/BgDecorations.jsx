@@ -18,7 +18,7 @@ export default function BgDecorations() {
                             darkBallAppearence`} />
                               
             <div className={`absolute w-20 h-20 rounded-full ball
-                            ${darkMode ? "bg-dr2PrimaryDark moveBallUp" : "bg-amber-500/60 moveBallDown"} 
+                            ${darkMode ? "bg-dr2PrimaryDark/70 moveBallUp" : "bg-amber-500/60 moveBallDown"} 
                             right-[5vw] 
                             lg:right-[15vw] 
                             xl:right-[25vw] 

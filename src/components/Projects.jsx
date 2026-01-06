@@ -168,10 +168,10 @@ export default function Projects() {
                             }`}
                         >
                             <i
-                                class={`text-4xl fa-solid fa-arrow-up
+                                className={`text-4xl fa-solid fa-arrow-up
                                 ${
                                     darkMode
-                                        ? "text-dfPrimaryDark"
+                                        ? "text-ltPrimaryDark"
                                         : "text-black/60 hover:text-black"
                                 }`}
                             ></i>

@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <div className={`flex mx-0 md:mx-9 py-4 justify-between items-center
                     rounded-xl mt-1 lg:mx-10 
-                    ${darkMode ? "bg-ltSecondaryDark/80" : "shadow bg-lt2Secondary/90"}`}>
+                    ${darkMode ? "bg-dfSecondaryDark/80" : "shadow bg-lt2Secondary/90"}`}>
       <div className="flex items-center whitespace-nowrap overflow-hidden">
         <h1 className={`pl-3 font-oxanium font-bold 
                       ${mobileMode ? "text-2xl" : "text-4xl"} 
@@ -46,7 +46,7 @@ export default function Header() {
              onClick={() => setDarkMode((prev) => !prev)}>
           <div className={`${darkMode ? "darkModeToggle" : "lightModeToggle"} flex flex-row`}>
             <i className={`${iconStyle} translate-x-0 fa-solid fa-sun mr-2 text-dfPrimary hover:text-ltPrimary `} />
-            <i className={`${iconStyle} translate-x-0 fa-solid fa-moon text-dfPrimaryDark hover:text-ltPrimaryDark`} />
+            <i className={`${iconStyle} translate-x-0 fa-solid fa-moon text-ltPrimaryDark hover:text-lt2PrimaryDark`} />
           </div>
           <div className={`absolute mt-10 hidden group-hover:block -translate-x-8 font-oxanium
                           px-3 py-1 text-sm rounded text-white shadow-lg select-none 
@@ -55,7 +55,7 @@ export default function Header() {
 
         <i
           className={`${iconStyle} mx-8  mr-5 group fa-solid fa-house 
-                      ${darkMode ? "text-dfPrimaryDark hover:text-ltPrimaryDark" : "text-dfPrimary hover:text-ltPrimary "}`}
+                      ${darkMode ? "text-ltPrimaryDark hover:text-lt2PrimaryDark" : "text-dfPrimary hover:text-ltPrimary "}`}
           onClick={() => setTabMode("Home")}
         >
           <div className={`absolute mt-2 hidden group-hover:block -translate-x-3.5 font-oxanium

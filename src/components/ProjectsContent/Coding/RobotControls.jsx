@@ -26,6 +26,15 @@ export default function RobotControls() {
                 but the motion was often jittery and unintuitive so I decided to
                 switch back to controlling the angles of each arm individually.
             </p>
+
+            <div className="flex justify-center w-full mt-5 ml-1.5">
+                <img
+                    src={`/daniel-milevsky-personal-website/portfolio-img/robot/robotControls.jpg`}
+                    alt="Cannot load img"
+                    className="w-full rounded-2xl"
+                />
+            </div>
+
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

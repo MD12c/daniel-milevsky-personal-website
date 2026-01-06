@@ -26,6 +26,13 @@ export default function CSVParser() {
                 struct and the switch. Then, it prints the row# and col# with
                 its content to the terminal.
             </p>
+            <div className="flex justify-center w-full mt-5 ml-1.5">
+                <img
+                    src={`/daniel-milevsky-personal-website/portfolio-img/csvParser.jpg`}
+                    alt="Cannot load img"
+                    className="sm:w-200 w-full rounded-2xl"
+                />
+            </div>
             <div className="mt-5 flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${

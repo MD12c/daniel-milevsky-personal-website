@@ -1,18 +1,16 @@
-# React + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Purpose
+This repository contains the source code for my personal website and portfolio.
+The site is designed to showcase my projects and document what I’m learning.
 
-Currently, two official plugins are available:
+## Tools
+This project is built using a modern frontend stack:
+  - Vite — Fast development server and build tool
+  - React — Component-based UI framework
+  - Tailwind CSS — Utility-first CSS for rapid styling
+  - JavaScript (ES6+) — Core application logic
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## License
+This project is for personal use and learning.
+Feel free to explore the code, but please do not reuse the design or content as-is without permission.

@@ -53,9 +53,9 @@ export default function AboutMe() {
                             }`}
                 >
                     <div className="w-full h-full">
-                        <div className="flex justify-start items-center">
-                            <div className="flex flex-col items-baseline ">
-                                <h2 className="text-xl font-oxanium-bold mb-2 mt-2">Who am I</h2>
+                        <div className="flex flex-col justify-start">
+                            <h2 className="text-xl font-oxanium-bold mb-2 mt-2">Who am I</h2>
+                            <div className="flex flex-col items-baseline">
                                 <p className="2xl:mx-10">
                                     Hi, I'm Daniel Milevsky, a student and a
                                     maker passionate about creating and learning
@@ -69,14 +69,16 @@ export default function AboutMe() {
                                             href="https://www.dawsoncollege.qc.ca/mechanical-engineering-technology/design-option-course-list/"> Dawsons website</a> 
                                 </span>
                                 <p>In short, we are doing:</p>
-                                <ul className="flex gap-x-10 flex-col lg:justify-between lg:flex-row list-disc px-5 my-4">
+                                <div className="2xl:mx-10">
+                                <ul className={`flex gap-x-10 flex-col lg:justify-between lg:flex-row list-disc px-10 py-2 my-4 rounded-2xl shadow-md
+                                    ${darkMode ? "bg-ltSecondaryDark/80" : "bg-ltSecondary/50"}`}>
                                     <li>Design with 3d modeling</li>
                                     <li>Material proprieties</li>
                                     <li>Machining projects</li>
                                     <li>Hydraulic & {<br className="sm:hidden"/>}Pneumatic systems</li>
                                     <li>Electronics & Coding</li>
                                     <li>And all kinds of projects</li>
-                                </ul>
+                                </ul></div>
                                 <p>
                                     With all this said, I'm always looking
                                     forward to learn more and explore different
@@ -84,8 +86,8 @@ export default function AboutMe() {
                                 </p>
                             </div>
                         </div>
-                        <h2 className="text-xl font-oxanium-bold mb-2 mt-8">My experiances</h2>
-                        <div className="flex flex-row flex-wrap mt-5 justify-center gap-15 2xl:justify-between 2xl:mx-10 2xl:flex-nowrap">
+                        <h2 className="text-xl font-oxanium-bold mb-2 mt-8">Things I have done/used (from little to a lot)</h2>
+                        <div className={`flex flex-row flex-wrap mt-5 justify-center gap-15 2xl:justify-between 2xl:mx-10 2xl:flex-nowrap`}>
                             <div className="inset-0 mb-10">
                                 <p>Software</p>
                                 {Software.map((Software, i) => (

@@ -10,7 +10,7 @@ export default function ProgressBar({ barWidth }) {
 
 
   return (
-    <div className={`mt-2 w-50 h-4 rounded-full overflow-visible 2xl:mt-9
+    <div className={`mt-2 w-50 h-4 rounded-full overflow-visible 2xl:mt-9 shadow-lg
     ${darkMode ? "bg-dfSecondaryDark" : "bg-drSecondary"}`}>
         <div className={`ml-0 h-4 rounded-full
         ${darkMode ? "bg-dfPrimaryDark" : "bg-dfPrimary"}`}

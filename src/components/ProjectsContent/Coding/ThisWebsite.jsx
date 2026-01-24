@@ -25,7 +25,7 @@ export default function ThisWebsite() {
                 {" "}<a
                     href="https://github.com/MD12c/daniel-milevsky-personal-website"
                     className={`underline underline-offset-1 ${
-                        darkMode ? "text-dfPrimaryDark" : "text-dfPrimary"
+                        darkMode ? "text-ltPrimaryDark" : "text-dfPrimary"
                     }`}
                 >
                     here

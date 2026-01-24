@@ -25,7 +25,7 @@ export default function ImageToMachineCode() {
                 was to convert a dxf file taken from
                 <a
                     className={`underline underline-offset-1 ${
-                        darkMode ? "text-dfPrimaryDark" : "text-dfPrimary"
+                        darkMode ? "text-ltPrimaryDark" : "text-dfPrimary"
                     }`}
                     href="https://cloudconvert.com/"
                 >

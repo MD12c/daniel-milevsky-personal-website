@@ -76,7 +76,7 @@ export default function ContactMe() {
                                 <a
                                     className={`underline underline-offset-1 ${
                                         darkMode
-                                            ? "text-dfPrimaryDark"
+                                            ? "text-ltPrimaryDark"
                                             : "text-dfPrimary"
                                     }`}
                                     href="https://www.linkedin.com/in/daniel-milevsky-467914332/"
@@ -91,7 +91,7 @@ export default function ContactMe() {
                                 <a
                                     className={`underline underline-offset-1 ${
                                         darkMode
-                                            ? "text-dfPrimaryDark"
+                                            ? "text-ltPrimaryDark"
                                             : "text-dfPrimary"
                                     }`}
                                     href="https://github.com/MD12c"

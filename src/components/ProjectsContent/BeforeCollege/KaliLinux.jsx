@@ -24,7 +24,7 @@ export default function KaliLinux() {
                 watching channels on youtube like{" "}
                 <a
                     className={`underline underline-offset-1 ${
-                        darkMode ? "text-dfPrimaryDark" : "text-dfPrimary"
+                        darkMode ? "text-ltPrimaryDark" : "text-dfPrimary"
                     }`}
                     href="https://www.youtube.com/@PowerCertAnimatedVideos"
                 >
@@ -35,7 +35,7 @@ export default function KaliLinux() {
                 about how easy it is to create malware:{" "}
                 <a
                     className={`underline underline-offset-1 ${
-                        darkMode ? "text-dfPrimaryDark" : "text-dfPrimary"
+                        darkMode ? "text-ltPrimaryDark" : "text-dfPrimary"
                     }`}
                     href="https://www.youtube.com/watch?v=_C7nRJ6WsmI"
                 >
@@ -50,7 +50,7 @@ export default function KaliLinux() {
                 open/copy/delete any file.
                 <br />
                 After that I experimented with hydra password cracker and setup
-                tor browser to use as a proxy.
+                TOR browser as a proxy.
             </p>
             <div className="mt-5 flex flex-row items-center">
                 <div
@@ -63,7 +63,9 @@ export default function KaliLinux() {
             <p>
                 I learned the basics of networking, setting up a virtual
                 machine, the basics of linux OS and the importance of
-                cyber-security.
+                cyber-security. Most people don't realize how vulnerable they are
+                on the internet and how easy it is to exploit them. These
+                experiments made me more cautious about my online activities.
             </p>
             <span className="font-bold">
                 NOTE: Everything I did was legal and was only fueled by

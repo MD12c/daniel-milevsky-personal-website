@@ -48,7 +48,7 @@ export default function AboutMe() {
                     className={`px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
-                                    ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"
+                                    ? "bg-dr2SecondaryDark/50 text-lt2PrimaryDark/80"
                                     : "bg-ltSecondary/50 text-black"
                             }`}
                 >
@@ -65,20 +65,23 @@ export default function AboutMe() {
                                 </p>
                                 <span>
                                     View my full course list on 
-                                        <a className={`${darkMode ? "text-dfPrimaryDark" : "text-dfPrimary"}`}
+                                        <a className={`${darkMode ? "text-ltPrimaryDark" : "text-dfPrimary"}`}
                                             href="https://www.dawsoncollege.qc.ca/mechanical-engineering-technology/design-option-course-list/"> Dawsons website</a> 
                                 </span>
                                 <p>In short, we are doing:</p>
-                                <div className="2xl:mx-10">
-                                <ul className={`flex gap-x-10 flex-col lg:justify-between lg:flex-row list-disc px-10 py-2 my-4 rounded-2xl shadow-md
-                                    ${darkMode ? "bg-ltSecondaryDark/80" : "bg-ltSecondary/50"}`}>
+                                <div className={`2xl:mx-10 my-5 rounded-2xl flex justify-center w-full 2xl:w-auto shadow-md ${darkMode ? "bg-ltSecondaryDark/50" : "bg-ltSecondary/50"}`}>
+                                <ul className={`grid gap-x-10 justify-between xl:grid-cols-6 lg:grid-cols-3 grid-cols-2 list-disc px-20 py-2 my-2 rounded-2xl 
+                                    `}>
                                     <li>Design with 3d modeling</li>
                                     <li>Material proprieties</li>
                                     <li>Machining projects</li>
-                                    <li>Hydraulic & {<br className="sm:hidden"/>}Pneumatic systems</li>
+                                    <li>Pneumatic systems</li>
                                     <li>Electronics & Coding</li>
                                     <li>And all kinds of projects</li>
                                 </ul></div>
+                                <p>
+                                    Things that I am interested in: CAD, Computer Graphics, 3D Printing, Machining, Robotics, Electronics, Coding and DIY projects.
+                                </p>
                                 <p>
                                     With all this said, I'm always looking
                                     forward to learn more and explore different

@@ -123,7 +123,7 @@ export default function Projects() {
                     className={`px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
-                                    ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"
+                                    ? "bg-dr2SecondaryDark/50 text-lt2PrimaryDark/80"
                                     : "bg-ltSecondary/50 text-black"
                             }`}
                 >

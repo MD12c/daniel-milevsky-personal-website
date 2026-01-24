@@ -8,7 +8,9 @@ export default function SimpleCalculator() {
 
     return (
         <div className="mb-8">
-            <h2 className="text-3xl font-oxanium-bold mb-5">Simple Calculator</h2>
+            <h2 className="text-3xl font-oxanium-bold mb-5">
+                Simple Calculator
+            </h2>
             <div className="flex flex-row items-center">
                 <div
                     className={`w-5 h-0.5 mr-1 ${
@@ -30,7 +32,12 @@ export default function SimpleCalculator() {
                 />
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
-            <p>I learned how to set up a project using Visual Studio and the basics of programing.</p>
+            <p>
+                I know that its very simple, but it allowed me to understand the
+                basics of coding and most importantly, it introduced me to
+                coding microcontrollers. Which would later become one of my
+                favorite hobbies.
+            </p>
         </div>
     );
 }

@@ -27,7 +27,7 @@ export default function AboutMe() {
     ];
     const Coding = [
         { name: "C++", Progress: "50" },
-        { name: "Arduino ", Progress: "50" },
+        { name: "Embedded C/C++", Progress: "50" },
         { name: "C#", Progress: "25" },
         { name: "React + Tailwind", Progress: "25" },
         { name: "Html + CSS", Progress: "25" }
@@ -92,7 +92,7 @@ export default function AboutMe() {
                         <h2 className="text-xl font-oxanium-bold mb-2 mt-8">Things I have done/used (from little to a lot)</h2>
                         <div className={`flex flex-row flex-wrap mt-5 justify-center gap-15 2xl:justify-between 2xl:mx-10 2xl:flex-nowrap`}>
                             <div className="inset-0 mb-10">
-                                <p>Software</p>
+                                <p className={`pb-2 ${darkMode ? "border-b-2 border-dfSecondaryDark" : "border-b-2 border-black/30"}`}>Software</p>
                                 {Software.map((Software, i) => (
                                     <ul
                                         className={`
@@ -116,7 +116,7 @@ export default function AboutMe() {
                             </div>
 
                             <div className="inset-0 mb-10">
-                                <p>General</p>
+                                <p className={`pb-2 ${darkMode ? "border-b-2 border-dfSecondaryDark" : "border-b-2 border-black/30"}`}>General</p>
                                 {General.map((General, i) => (
                                     <ul
                                         className={`
@@ -140,7 +140,7 @@ export default function AboutMe() {
                             </div>
 
                             <div className="inset-0 mb-10">
-                                <p>Coding</p>
+                                <p className={`pb-2 ${darkMode ? "border-b-2 border-dfSecondaryDark" : "border-b-2 border-black/30"}`}>Coding</p>
                                 {Coding.map((Coding, i) => (
                                     <ul
                                         className={`

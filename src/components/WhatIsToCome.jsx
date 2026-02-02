@@ -33,7 +33,7 @@ export default function WhatIsToCome() {
                             Plans
                         </h2>
                         <p>
-                            After dawson, I plan to go to Concordia University
+                            After Dawson College, I plan to go to Concordia University
                             and get a bachelor's in mechanical engineering to
                             later get a job as a research and development
                             engineer or R&D in short.

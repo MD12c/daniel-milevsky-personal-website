@@ -45,11 +45,10 @@ export default function KaliLinux() {
                 file that, if opened, would give my computer full access to the
                 other device.
                 <br />
-                Then my brother and I tested that on our computers and it
-                unsurprisingly worked. I was able to open/kill any process and
-                open/copy/delete any file.
+                Then my brother and I tested that on our computers and were able
+                to open/kill any process and open/copy/delete any file.
                 <br />
-                After that I experimented with hydra password cracker and setup
+                After that I experimented with hydra password cracker and using
                 TOR browser as a proxy.
             </p>
             <div className="mt-5 flex flex-row items-center">
@@ -63,8 +62,8 @@ export default function KaliLinux() {
             <p>
                 I learned the basics of networking, setting up a virtual
                 machine, the basics of linux OS and the importance of
-                cyber-security. Most people don't realize how vulnerable they are
-                on the internet and how easy it is to exploit them. These
+                cyber-security. Most people don't realize how vulnerable they
+                are on the internet and how easy it is to exploit them. These
                 experiments made me more cautious about my online activities.
             </p>
             <span className="font-bold">

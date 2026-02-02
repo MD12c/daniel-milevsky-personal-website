@@ -22,12 +22,12 @@ export default function CombinationLock() {
             </div>
             <p>
                 This time I decided to make the mechanism of a combination
-                padlock with 4 rotary dials as a step up from my previous
+                padlock with 4 rotary dials as a step-up from my previous
                 projects.
             </p>
             <div className="flex flex-col gap-3 md:flex-row mt-3">
                 <ImageLoader imgAdress={"lock/lock4.jpg"} key={ProjectTab} />
-                <ImageLoader imgAdress={"lock/lock2.jpg"} key={ProjectTab}/>
+                <ImageLoader imgAdress={"lock/lock2.jpg"} key={ProjectTab} />
                 <ImageLoader imgAdress={"lock/lock.jpg"} key={ProjectTab} />
             </div>
             <div className="mt-5 flex flex-row items-center">
@@ -39,8 +39,9 @@ export default function CombinationLock() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                I learned how combination locks work internally and that writing
-                with a sharpie on PLA plastic is a bad idea.
+                I learned how combination locks work and that writing with a
+                marker on PLA plastic is a bad decision. I will use embossed
+                numbers next time.
             </p>
         </div>
     );

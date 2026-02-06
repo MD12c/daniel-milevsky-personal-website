@@ -21,6 +21,7 @@ export default function AboutMe() {
     const General = [
         { name: "Manual Machining", Progress: "75" },
         { name: "3D Printing", Progress: "75" },
+        { name: "Drafting & GD&T", Progress: "75" },
         { name: "Electronics", Progress: "50" },
         { name: "Math", Progress: "50" },
         { name: "Welding", Progress: "50" }
@@ -28,6 +29,7 @@ export default function AboutMe() {
     const Coding = [
         { name: "C++", Progress: "50" },
         { name: "Embedded C/C++", Progress: "50" },
+        { name: "Ladder Logic", Progress: "50" },
         { name: "C#", Progress: "25" },
         { name: "React + Tailwind", Progress: "25" },
         { name: "Html + CSS", Progress: "25" }

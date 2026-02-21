@@ -26,6 +26,7 @@ import ThisWebsite from "./ProjectsContent/Coding/ThisWebsite";
 import ImageToMachineCode from "./ProjectsContent/Coding/ImageToMachineCode";
 import CSVParser from "./ProjectsContent/Coding/CSVParser";
 import RobotControls from "./ProjectsContent/Coding/RobotControls";
+import Graph from "./ProjectsContent/Coding/Graph";
 
 export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
@@ -72,6 +73,7 @@ export default function Projects() {
         "Image to machine code",
         ".csv parser",
         "Robot controls",
+        "Graph"
     ];
     const categories = [
         { name: "Before College", items: BeforeProps },
@@ -264,6 +266,10 @@ export default function Projects() {
                     <Divider />
                     <div id={`${makeId("Robot controls")}`}>
                         <RobotControls />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Graph")}`}>
+                        <Graph />
                     </div>
                     <Divider />
                 </div>

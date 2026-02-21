@@ -33,7 +33,7 @@ export default function WhatIsToCome() {
                             Plans
                         </h2>
                         <p>
-                            After Dawson College, I plan to go to Concordia University
+                            After Dawson College, I plan to go to a university
                             and get a bachelor's in mechanical engineering to
                             later get a job as a research and development
                             engineer or R&D in short.
@@ -47,7 +47,7 @@ export default function WhatIsToCome() {
                         </h2>
                         <div>
                             <ul className="list-disc ml-5">
-                                <li>Learn OpenGL + do a small project to get familiar with it</li>
+                                <li>Do a plastic injection molder for my dawson final project</li>
                                 <li>Try PCB design in KiCad using STM chips</li>
                                 <li>Make a 2nd version of the Plotter (using better hardware)</li>
                             </ul>

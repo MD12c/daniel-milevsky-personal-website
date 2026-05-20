@@ -9,7 +9,7 @@ import Divider from "./ProjectsContent/Divider";
 import CombinationLock from "./ProjectsContent/BeforeCollege/CombinationLock";
 import BlowDartTube from "./ProjectsContent/BeforeCollege/BlowDartTube";
 import SimpleCalculator from "./ProjectsContent/BeforeCollege/SimpleCalculator";
-import KaliLinux from "./ProjectsContent/BeforeCollege/KaliLinux";
+import KaliLinux from "./ProjectsContent/Coding/KaliLinux";
 import Hammer from "./ProjectsContent/Machining/Hammer";
 import Gears from "./ProjectsContent/Machining/Gears";
 import Cclamp from "./ProjectsContent/Machining/Cclamp";
@@ -46,9 +46,9 @@ export default function Projects() {
         "Hidden blade",
         "Nerf gun",
         "Combination Lock",
-        "Blow dart tube",
-        "Simple calculator",
-        "Kali linux",
+        // "Blow dart tube",
+        // "Simple calculator",
+        
     ];
     const MachiningProps = [
         "C clamp",
@@ -73,6 +73,7 @@ export default function Projects() {
         "Image to machine code",
         ".csv parser",
         "Robot controls",
+        "Kali linux",
         "Graph"
     ];
     const categories = [
@@ -192,18 +193,14 @@ export default function Projects() {
                         <CombinationLock />
                     </div>
                     <Divider />
-                    <div id={`${makeId("Blow dart tube")}`}>
+                    {/* <div id={`${makeId("Blow dart tube")}`}>
                         <BlowDartTube />
                     </div>
                     <Divider />
                     <div id={`${makeId("Simple calculator")}`}>
                         <SimpleCalculator />
-                    </div>
-                    <Divider />
-                    <div id={`${makeId("Kali linux")}`}>
-                        <KaliLinux />
-                    </div>
-                    <Divider />
+                    </div> 
+                    <Divider />*/}
                     <div id={`${makeId("C clamp")}`}>
                         <Cclamp />
                     </div>
@@ -266,6 +263,10 @@ export default function Projects() {
                     <Divider />
                     <div id={`${makeId("Robot controls")}`}>
                         <RobotControls />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Kali linux")}`}>
+                        <KaliLinux />
                     </div>
                     <Divider />
                     <div id={`${makeId("Graph")}`}>

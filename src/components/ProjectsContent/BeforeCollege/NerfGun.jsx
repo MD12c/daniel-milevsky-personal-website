@@ -16,8 +16,8 @@ export default function NerfGun() {
             </div>
             <p>
                 This was my second 3D printed and Inventor designed project. As
-                a kid, I was facinated by the mechansim of nerf guns, so I
-                decided to attempt to build one of my own with peacefull intent.
+                a kid, I was fascinated by the mechanism of nerf guns, so I
+                decided to attempt to build one of my own with peaceful intent.
             </p>
             <div className="my-10 mx-5">
                 <ImageLoader imgAdress={"nerfgun.jpg"} key={ProjectTab} />

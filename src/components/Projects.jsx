@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { TabContext } from "../context/TabContext";
 import { DarkModeContext } from "../context/DarkModeContext";
 import { ProjectTabContext } from "../context/ProjectTabContext";
-import { MobileContext } from '../context/MobileContext'
+import { MobileContext } from "../context/MobileContext";
 import NerfGun from "./ProjectsContent/BeforeCollege/NerfGun";
 import AssassinsCreedKnife from "./ProjectsContent/BeforeCollege/AssassinsCreedKnife";
 import Divider from "./ProjectsContent/Divider";
@@ -27,6 +27,8 @@ import ImageToMachineCode from "./ProjectsContent/Coding/ImageToMachineCode";
 import CSVParser from "./ProjectsContent/Coding/CSVParser";
 import RobotControls from "./ProjectsContent/Coding/RobotControls";
 import Graph from "./ProjectsContent/Coding/Graph";
+import PlotterV2 from "./ProjectsContent/BigProjects/PlotterV2";
+import PlasticInjection from "./ProjectsContent/BigProjects/PlasticInjection";
 
 export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
@@ -42,13 +44,14 @@ export default function Projects() {
             : "bg-dfSecondary hover:bg-ltPrimary/30 active:bg-ltPrimary/60"
     }`;
 
+    const BigProps = ["Plotter 2V", "Plastic Injection", "OpenGL stuff"];
+
     const BeforeProps = [
         "Hidden blade",
         "Nerf gun",
         "Combination Lock",
         // "Blow dart tube",
         // "Simple calculator",
-        
     ];
     const MachiningProps = [
         "C clamp",
@@ -74,7 +77,7 @@ export default function Projects() {
         ".csv parser",
         "Robot controls",
         "Kali linux",
-        "Graph"
+        "Graph",
     ];
     const categories = [
         { name: "Before College", items: BeforeProps },
@@ -131,13 +134,27 @@ export default function Projects() {
                             }`}
                 >
                     <div className="flex flex-col items-center">
-                        <h1 className="text-3xl font-oxanium-bold mb-4 mt-4">Big Projects</h1>
+                        <h1 className="text-3xl font-oxanium-bold mb-4 mt-4">
+                            Big Projects
+                        </h1>
                         <div className="flex flex-col md:flex-row justify-center w-[80vw] max-w-210 text-center gap-2 text-nowrap">
-                            <div className={projectTabStyle+" md:w-80"}>Plotter 2V{!mobileMode && <br />} will be here</div>
-                            <div className={projectTabStyle+" md:w-80"}>Dawsons cap-stone{!mobileMode && <br />} will be here</div>
-                            <div className={projectTabStyle+" md:w-80"}>OpenGL stuff{!mobileMode && <br />} will be here</div>
+                            <div className={projectTabStyle + " md:w-80"}
+                                onClick={() => scrollToItem("PlotterV2")}
+                            >
+                                Plotter V2
+                            </div>
+                            <div className={projectTabStyle + " md:w-80"}
+                                onClick={() => scrollToItem("Plastic Injection")}
+                            >
+                                Plastic Injection
+                            </div>
+                            <div className={projectTabStyle + " md:w-80"}>
+                                OpenGL stuff{!mobileMode && <br />} will be here
+                            </div>
                         </div>
-                        <h1 className="text-3xl font-oxanium-bold mb-2 mt-14">Small Projects + Assignments</h1>
+                        <h1 className="text-3xl font-oxanium-bold mb-2 mt-14">
+                            Small Projects + Assignments
+                        </h1>
                         <div>
                             {categories.map((cat, ci) => (
                                 <div key={ci} className="pb-2">
@@ -179,6 +196,14 @@ export default function Projects() {
                                 }`}
                             ></i>
                         </div>
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Plastic Injection")}`}>
+                        <PlasticInjection />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("PlotterV2")}`}>
+                        <PlotterV2 />
                     </div>
                     <Divider />
                     <div id={`${makeId("Hidden blade")}`}>

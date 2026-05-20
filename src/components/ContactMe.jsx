@@ -41,11 +41,11 @@ export default function ContactMe() {
 
     return (
         <div
-            className={`absolute min-h-screen w-full flex justify-center inset-0 
+            className={`absolute h-fit w-full flex justify-center inset-0 
             ${TabMode === "ContactMe" ? "TabIn" : "TabOut"}`}
         >
             <div
-                className={`lg:w-250 w-[95vw] h-[23vh] mt-3 rounded-2xl pt-[10vh] 
+                className={`lg:w-250 w-[95vw] mt-3 rounded-2xl pt-26 
                             ${
                                 darkMode
                                     ? "bg-drSecondaryDark/80"
@@ -54,7 +54,7 @@ export default function ContactMe() {
             >
                 <div
                     data-scroll-container
-                    className={`px-4 pt-3 h-[13vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
+                    className={`px-4 pt-3 rounded-b-2xl text-xl overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit pb-4
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"
@@ -63,12 +63,17 @@ export default function ContactMe() {
                 >
                     <div className="text-2xl flex flex-col items-center">
                         <div>
-                            <h2>
-                                <span className="font-oxanium-bold">
-                                    email:
-                                </span>{" "}
-                                danielmilevsky@gmail.com
-                            </h2>
+                            <div className="flex flex-row items-baseline gap-2">
+                                <h2>
+                                    <span className="font-oxanium-bold">
+                                        email:
+                                    </span>{" "}
+                                    danielmilevsky@gmail.com
+                                </h2>
+                                <span className="text-sm">
+                                    (Prefered)
+                                </span>
+                            </div>
                             <h2>
                                 <span className="font-oxanium-bold">
                                     linkedin:

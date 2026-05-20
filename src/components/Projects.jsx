@@ -113,7 +113,7 @@ export default function Projects() {
             ${TabMode === "ProjectsJournal" ? "TabIn" : "TabOut"}`}
         >
             <div
-                className={`lg:w-250 w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh] 
+                className={`lg:w-250 w-[95vw] h-[95vh] mt-3 rounded-2xl pt-26 
                             ${
                                 darkMode
                                     ? "bg-drSecondaryDark/80"
@@ -122,7 +122,7 @@ export default function Projects() {
             >
                 <div
                     data-scroll-container
-                    className={`px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
+                    className={`px-4 pt-3 h-full rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/50 text-lt2PrimaryDark/80"

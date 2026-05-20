@@ -8,11 +8,11 @@ export default function WhatIsToCome() {
 
     return (
         <div
-            className={`absolute min-h-screen w-full flex justify-center inset-0 
+            className={`absolute h-fit w-full flex justify-center inset-0 
             ${TabMode === "What's next" ? "TabIn" : "TabOut"}`}
         >
             <div
-                className={`lg:w-250 w-[95vw] md:h-[40vh] sm:h-[48vh] h-[53vh] mt-3 rounded-2xl pt-[10vh] 
+                className={`lg:w-250 w-[95vw] mt-3 rounded-2xl pt-26
                             ${
                                 darkMode
                                     ? "bg-drSecondaryDark/80"
@@ -21,7 +21,7 @@ export default function WhatIsToCome() {
             >
                 <div
                     data-scroll-container
-                    className={`px-4 pt-3 md:h-[30vh] sm:h-[38vh] h-[43vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
+                    className={`px-4 pt-3 rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/50 text-lt2PrimaryDark/80"
@@ -46,7 +46,7 @@ export default function WhatIsToCome() {
                             To do
                         </h2>
                         <div>
-                            <ul className="list-disc ml-5">
+                            <ul className="list-disc ml-5 pb-4">
                                 <li>Do a plastic injection molder for my dawson final project</li>
                                 <li>Try PCB design in KiCad using STM chips</li>
                                 <li>Make a 2nd version of the Plotter (using better hardware)</li>

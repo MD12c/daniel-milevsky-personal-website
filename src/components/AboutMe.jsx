@@ -27,7 +27,7 @@ export default function AboutMe() {
         { name: "Welding", Progress: "50" }
     ];
     const Coding = [
-        { name: "C++", Progress: "50" },
+        { name: "C++", Progress: "75" },
         { name: "Embedded C/C++", Progress: "50" },
         { name: "Ladder Logic", Progress: "50" },
         { name: "C#", Progress: "25" },
@@ -39,7 +39,7 @@ export default function AboutMe() {
         <div className={`absolute w-full h-full flex justify-center inset-0 
             ${TabMode === "AboutMe" ? "TabIn" : "TabOut"}`}>
             <div
-                className={`lg:w-350 w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh] 
+                className={`lg:w-350 w-[95vw] h-[95vh] mt-3 rounded-2xl pt-26 
                             ${
                                 darkMode
                                     ? "bg-drSecondaryDark/80"
@@ -47,7 +47,7 @@ export default function AboutMe() {
                             }`}
             >
                 <div
-                    className={`px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scrollbar-thin scrollbar-webkit
+                    className={`px-4 pt-3 h-full rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/50 text-lt2PrimaryDark/80"

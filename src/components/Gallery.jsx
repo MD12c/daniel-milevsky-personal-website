@@ -78,7 +78,7 @@ export default function Gallery() {
             ${TabMode === "Gallery" ? "TabIn" : "TabOut"}`}
         >
             <div
-                className={`lg:w-250 w-[95vw] h-[95vh] mt-3 rounded-2xl pt-[10vh] 
+                className={`lg:w-250 w-[95vw] h-[95vh] mt-3 rounded-2xl pt-26 
                             ${
                                 darkMode
                                     ? "bg-drSecondaryDark/80"
@@ -88,7 +88,7 @@ export default function Gallery() {
                 <div
                     ref={scrollRef}
                     data-scroll-container
-                    className={`relative px-4 pt-3 h-[85vh] rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
+                    className={`relative px-4 pt-3 h-full rounded-b-2xl text-xl overflow-y-auto overflow-x-hidden [-webkit-overflow-scrolling:touch] scroll-smooth scrollbar-thin scrollbar-webkit
                             ${
                                 darkMode
                                     ? "bg-dr2SecondaryDark/80 text-lt2PrimaryDark/80"

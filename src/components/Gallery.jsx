@@ -134,13 +134,13 @@ export default function Gallery() {
                                 </div>
                             ))}
                         </div>
-                        <div className="flex flex-row flex-wrap gap-3 mx-5 my-10 justify-center">
+                        {/* <div className="flex flex-row flex-wrap gap-3 mx-5 my-10 justify-center">
                             {videosVert.map((video, v) => (
                                 <div className="lg:w-70 md:w-60 w-full" key={v}>
                                     <VideoLoader videoAdress={video + ".mp4"} />
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

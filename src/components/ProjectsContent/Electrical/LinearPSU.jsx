@@ -41,10 +41,16 @@ export default function LinearPSU() {
                 salvaged the components from an old ATX power supply and
                 assembled the circuit on a perfboard.
             </p>
+            <div className="mt-5 flex flex-row items-center">
             <ImageLoader
                 imgAdress={"LinearPSU/transformer.png"}
                 key={ProjectTab}
             />
+            <ImageLoader
+                imgAdress={"LinearPSU/perfboard.png"}
+                key={ProjectTab}
+            />
+            </div>
             <div className="flex justify-center w-full mt-5 ml-1.5 py-4">
                 <img
                     src={`/daniel-milevsky-personal-website/portfolio-img/LinearPSU/LTSpice.png`}
@@ -69,7 +75,7 @@ export default function LinearPSU() {
                 circuit on a perfboard and gave it a try. The voltage was very
                 low and did not reach the desired value. I found that due to the
                 low value of the resistor on the cathode of the TL431, the
-                current going through the TL431 was above the rated current
+                current going through the it was above the rated current
                 specified on the datasheet.
                 <br />I found another resistor with a higher value, but couldn't
                 find another TL431. I decided to put this project on hold until

@@ -80,10 +80,10 @@ export default function Projects() {
         "Graph",
     ];
     const categories = [
-        { name: "Before College", items: BeforeProps },
         { name: "Machining", items: MachiningProps },
         { name: "Design", items: DesignProps },
         { name: "Coding", items: CodingProps },
+        { name: "Before College", items: BeforeProps },
     ];
 
     const makeId = (str) => str.toLowerCase().replace(/[^a-z0-9]+/g, "-");
@@ -206,18 +206,6 @@ export default function Projects() {
                         <PlotterV2 />
                     </div>
                     <Divider />
-                    <div id={`${makeId("Hidden blade")}`}>
-                        <AssassinsCreedKnife />
-                    </div>
-                    <Divider />
-                    <div id={`${makeId("Nerf gun")}`}>
-                        <NerfGun />
-                    </div>
-                    <Divider />
-                    <div id={`${makeId("Combination Lock")}`}>
-                        <CombinationLock />
-                    </div>
-                    <Divider />
                     {/* <div id={`${makeId("Blow dart tube")}`}>
                         <BlowDartTube />
                     </div>
@@ -296,6 +284,18 @@ export default function Projects() {
                     <Divider />
                     <div id={`${makeId("Graph")}`}>
                         <Graph />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Hidden blade")}`}>
+                        <AssassinsCreedKnife />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Nerf gun")}`}>
+                        <NerfGun />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Combination Lock")}`}>
+                        <CombinationLock />
                     </div>
                     <Divider />
                 </div>

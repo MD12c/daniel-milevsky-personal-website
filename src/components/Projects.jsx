@@ -30,6 +30,7 @@ import Graph from "./ProjectsContent/Coding/Graph";
 import PlotterV2 from "./ProjectsContent/BigProjects/PlotterV2";
 import PlasticInjection from "./ProjectsContent/BigProjects/PlasticInjection";
 import LinearPSU from "./ProjectsContent/Electrical/LinearPSU";
+import Pong from "./ProjectsContent/Coding/Pong";
 
 export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
@@ -79,6 +80,7 @@ export default function Projects() {
         "Robot controls",
         "Kali linux",
         "Graph",
+        "Pong game",
     ];
     const ElectricalProps = [
         "Linear Power Supply"
@@ -289,6 +291,10 @@ export default function Projects() {
                     <Divider />
                     <div id={`${makeId("Graph")}`}>
                         <Graph />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Pong game")}`}>
+                        <Pong />
                     </div>
                     <Divider />
                     <div id={`${makeId("Linear Power Supply")}`}>

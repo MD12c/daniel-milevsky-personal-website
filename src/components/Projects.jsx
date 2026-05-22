@@ -29,6 +29,7 @@ import RobotControls from "./ProjectsContent/Coding/RobotControls";
 import Graph from "./ProjectsContent/Coding/Graph";
 import PlotterV2 from "./ProjectsContent/BigProjects/PlotterV2";
 import PlasticInjection from "./ProjectsContent/BigProjects/PlasticInjection";
+import LinearPSU from "./ProjectsContent/Electrical/LinearPSU";
 
 export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
@@ -79,10 +80,14 @@ export default function Projects() {
         "Kali linux",
         "Graph",
     ];
+    const ElectricalProps = [
+        "Linear Power Supply"
+    ];
     const categories = [
         { name: "Machining", items: MachiningProps },
         { name: "Design", items: DesignProps },
         { name: "Coding", items: CodingProps },
+        { name: "Electrical", items: ElectricalProps },
         { name: "Before College", items: BeforeProps },
     ];
 
@@ -284,6 +289,10 @@ export default function Projects() {
                     <Divider />
                     <div id={`${makeId("Graph")}`}>
                         <Graph />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Linear Power Supply")}`}>
+                        <LinearPSU />
                     </div>
                     <Divider />
                     <div id={`${makeId("Hidden blade")}`}>

@@ -30,7 +30,7 @@ export default function ConstraintSolver() {
             <div className="my-5 flex flex-row items-center">
                 <div className="flex justify-center w-full">
                     <img
-                        src={`/daniel-milevsky-personal-website/portfolio-img/ConstraintSolver/ConstraintSolver.png`}
+                        src={`/daniel-milevsky-personal-website/portfolio-img/ConstraintSolver/ConstraintSolver.jpg`}
                         alt="Cannot load img"
                         className="w-full rounded-2xl"
                     />

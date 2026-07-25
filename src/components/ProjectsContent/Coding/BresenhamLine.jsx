@@ -26,7 +26,7 @@ export default function BresenhamLine() {
             </p>
             <div className="my-5 flex flex-row items-center">
                 <ImageLoader
-                    imgAdress={"BresenhamLine/BresenhamLine.png"}
+                    imgAdress={"BresenhamLine/BresenhamLine.jpg"}
                     key={ProjectTab}
                 />
             </div>

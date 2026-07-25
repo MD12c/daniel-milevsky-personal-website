@@ -24,7 +24,7 @@ export default function Pong() {
                 with ws2tcpip.h for the networking.
             </p>
             <div className="my-5 flex flex-row items-center">
-                <ImageLoader imgAdress={"pong/pong.png"} key={ProjectTab} />
+                <ImageLoader imgAdress={"pong/pong.jpg"} key={ProjectTab} />
             </div>
             <p>
                 I made the game with a client and server architecture. The

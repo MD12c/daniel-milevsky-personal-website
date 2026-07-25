@@ -60,14 +60,20 @@ export default function Gallery() {
         "slot",
         "CADlife",
         "self3Dprint",
+        "pong/pong",
+        "BresenhamLine/BresenhamLine",
+        "ArrowClock/ArrowClock",
+        "SpaceMouseMapper/SpaceMouseMapper",
+        "ConstraintSolver/ConstraintSolver",
+        "LinearPSU/perfboard",
     ];
-    const videosVert = [ 
-        "mill",
-        "No/pneumaticsC1No",
-        "No/pneumaticsC2No",
-        "No/pneumaticsC3No",
-        "No/pneumaticsC4No",
-    ];
+    // const videosVert = [ 
+    //     "mill",
+    //     "No/pneumaticsC1No",
+    //     "No/pneumaticsC2No",
+    //     "No/pneumaticsC3No",
+    //     "No/pneumaticsC4No",
+    // ];
     const videosHor = [
         "gears","nerfgun","nerfgun2","punchpress","No/fluidcimNo","No/CclampNo",
     ];
@@ -133,7 +139,7 @@ export default function Gallery() {
                                     <VideoLoader videoAdress={video + ".mp4"} />
                                 </div>
                             ))}
-                        </div>
+                        </div> 
                         {/* <div className="flex flex-row flex-wrap gap-3 mx-5 my-10 justify-center">
                             {videosVert.map((video, v) => (
                                 <div className="lg:w-70 md:w-60 w-full" key={v}>

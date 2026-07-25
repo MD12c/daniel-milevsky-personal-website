@@ -24,7 +24,7 @@ export default function ArrowClock() {
             </p>
             <div className="my-5 flex flex-row items-center">
                 <ImageLoader
-                    imgAdress={"ArrowClock/ArrowClock.png"}
+                    imgAdress={"ArrowClock/ArrowClock.jpg"}
                     key={ProjectTab}
                 />
             </div>

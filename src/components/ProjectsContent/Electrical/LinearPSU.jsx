@@ -43,17 +43,17 @@ export default function LinearPSU() {
             </p>
             <div className="mt-5 flex flex-row items-center">
             <ImageLoader
-                imgAdress={"LinearPSU/transformer.png"}
+                imgAdress={"LinearPSU/transformer.jpg"}
                 key={ProjectTab}
             />
             <ImageLoader
-                imgAdress={"LinearPSU/perfboard.png"}
+                imgAdress={"LinearPSU/perfboard.jpg"}
                 key={ProjectTab}
             />
             </div>
             <div className="flex justify-center w-full mt-5 ml-1.5 py-4">
                 <img
-                    src={`/daniel-milevsky-personal-website/portfolio-img/LinearPSU/LTSpice.png`}
+                    src={`/daniel-milevsky-personal-website/portfolio-img/LinearPSU/LTSpice.jpg`}
                     alt="Cannot load img"
                     className="w-full rounded-2xl"
                 />

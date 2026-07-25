@@ -33,7 +33,7 @@ export default function SpaceMouseMapper() {
 
             <div className="my-5 flex flex-row items-center">
                 <ImageLoader
-                    imgAdress={"SpaceMouseMapper/SpaceMouseMapper.png"}
+                    imgAdress={"SpaceMouseMapper/SpaceMouseMapper.jpg"}
                     key={ProjectTab}
                 />
             </div>

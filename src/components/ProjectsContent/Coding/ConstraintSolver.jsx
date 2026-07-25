@@ -1,16 +1,15 @@
 import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
-import ImageLoader from "../ImageLoader";
 
-export default function ConstraintSolver() {
+export default function SpaceMouseMapper() {
     const { darkMode } = useContext(DarkModeContext);
     const { ProjectTab } = useContext(ProjectTabContext);
 
     return (
         <div className="mb-8">
             <h2 className="text-3xl font-oxanium-bold mb-5">
-                Constraint Solver
+                Space Mouse Mapper
             </h2>
             <div className="flex flex-row items-center">
                 <div
@@ -28,7 +27,6 @@ export default function ConstraintSolver() {
                 perpendicular to line D", the solver should be able to find a
                 solution for the positions of the points and lines.
             </p>
-
             <div className="my-5 flex flex-row items-center">
                 <div className="flex justify-center w-full">
                     <img
@@ -52,7 +50,8 @@ export default function ConstraintSolver() {
                 . It involves calculating the Jacobian matrix of the system of
                 equations and iteratively updating the positions of the points
                 and lines until a solution is found or a maximum number of
-                iterations is reached.
+                iterations is reached. For graphics I used OpenGL plus ImGui for
+                UI and for vector math I used Eigen library.
             </p>
             <div className="mt-5 flex flex-row items-center">
                 <div
@@ -63,9 +62,9 @@ export default function ConstraintSolver() {
                 <h3 className="text-2xl">Conclusion</h3>
             </div>
             <p>
-                At the end, I was able to make a functional pong game that can
-                be played on 2 separate devices on the same local network or on
-                a single device. Code can be found on my github:{" "}
+                At the end, I was able to make a functional sketch solver that
+                can be used to solve simple geometric constraints. Code can be
+                found on my github:{" "}
                 <a
                     className={`underline underline-offset-1 ${
                         darkMode ? "text-ltPrimaryDark" : "text-dfPrimary"

@@ -2,14 +2,14 @@ import { useState, useContext, useEffect } from "react";
 import { DarkModeContext } from "../../../context/DarkModeContext";
 import { ProjectTabContext } from "../../../context/ProjectTabContext";
 
-export default function SpaceMouseMapper() {
+export default function ConstraintSolver() {
     const { darkMode } = useContext(DarkModeContext);
     const { ProjectTab } = useContext(ProjectTabContext);
 
     return (
         <div className="mb-8">
             <h2 className="text-3xl font-oxanium-bold mb-5">
-                Space Mouse Mapper
+                Constraint Solver
             </h2>
             <div className="flex flex-row items-center">
                 <div

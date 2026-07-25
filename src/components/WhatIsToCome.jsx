@@ -47,9 +47,9 @@ export default function WhatIsToCome() {
                         </h2>
                         <div>
                             <ul className="list-disc ml-5 pb-4">
-                                <li>Continue learning OpenGL and OpenCV</li>
-                                <li>Try PCB design in KiCAD using ST chips</li>
-                                <li>Continue working on the linear power supply project</li>
+                                <li>Continue learning OpenGL and OpenCV and computer graphics in general</li>
+                                <li>Make a spot-welder using a microwave transformer</li>
+                                <li>Look out for technical related job opportunities</li>
                             </ul>
                         </div>
                     </div>

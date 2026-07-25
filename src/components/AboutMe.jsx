@@ -16,7 +16,7 @@ export default function AboutMe() {
         { name: "Autodesk AutoCad", Progress: "50" },
         { name: "FluidSIM", Progress: "50" },
         { name: "Blender", Progress: "25" },
-        { name: "Office 365 Tools", Progress: "75" }
+        { name: "Office 365 Tools", Progress: "75" },
     ];
     const General = [
         { name: "Manual Machining", Progress: "75" },
@@ -24,7 +24,7 @@ export default function AboutMe() {
         { name: "Drafting & GD&T", Progress: "75" },
         { name: "Electronics", Progress: "50" },
         { name: "Math", Progress: "50" },
-        { name: "Welding", Progress: "50" }
+        { name: "Welding", Progress: "50" },
     ];
     const Coding = [
         { name: "C++", Progress: "75" },
@@ -32,12 +32,14 @@ export default function AboutMe() {
         { name: "Ladder Logic", Progress: "50" },
         { name: "C#", Progress: "25" },
         { name: "React + Tailwind", Progress: "25" },
-        { name: "Html + CSS", Progress: "25" }
+        { name: "Html + CSS", Progress: "25" },
     ];
 
     return (
-        <div className={`absolute w-full h-full flex justify-center inset-0 
-            ${TabMode === "AboutMe" ? "TabIn" : "TabOut"}`}>
+        <div
+            className={`absolute w-full h-full flex justify-center inset-0 
+            ${TabMode === "AboutMe" ? "TabIn" : "TabOut"}`}
+        >
             <div
                 className={`lg:w-350 w-[95vw] h-[95vh] mt-3 rounded-2xl pt-26 
                             ${
@@ -56,33 +58,49 @@ export default function AboutMe() {
                 >
                     <div className="w-full h-full">
                         <div className="flex flex-col justify-start">
-                            <h2 className="text-xl font-oxanium-bold mb-2 mt-2">Who am I</h2>
+                            <h2 className="text-xl font-oxanium-bold mb-2 mt-2">
+                                Who am I
+                            </h2>
                             <div className="flex flex-col items-baseline">
                                 <p className="2xl:mx-10">
                                     Hi, I'm Daniel Milevsky, a student and a
                                     maker passionate about creating and learning
                                     new things in my free time. I'm currently
-                                    doing my 6th semester in mechanical
-                                    engineering at Dawson College.
+                                    done with my mechanical engineering couses
+                                    at Dawson College and finishing up my
+                                    university prerequisites.
                                 </p>
                                 <span>
-                                    View my full course list on 
-                                        <a className={`${darkMode ? "text-ltPrimaryDark" : "text-dfPrimary"}`}
-                                            href="https://www.dawsoncollege.qc.ca/mechanical-engineering-technology/design-option-course-list/"> Dawsons website</a> 
+                                    View my full course list on
+                                    <a
+                                        className={`${darkMode ? "text-ltPrimaryDark" : "text-dfPrimary"}`}
+                                        href="https://www.dawsoncollege.qc.ca/mechanical-engineering-technology/design-option-course-list/"
+                                    >
+                                        {" "}
+                                        Dawsons website
+                                    </a>
                                 </span>
                                 <p>In short, we are doing:</p>
-                                <div className={`2xl:mx-10 my-5 rounded-2xl flex justify-center w-full 2xl:w-auto shadow-md ${darkMode ? "bg-ltSecondaryDark/50" : "bg-ltSecondary/50"}`}>
-                                <ul className={`grid gap-x-10 justify-between xl:grid-cols-6 lg:grid-cols-3 grid-cols-2 list-disc px-20 py-2 my-2 rounded-2xl 
-                                    `}>
-                                    <li>Design with 3d modeling</li>
-                                    <li>Material proprieties</li>
-                                    <li>Machining projects</li>
-                                    <li>Pneumatic systems</li>
-                                    <li>Electronics & Coding</li>
-                                    <li>And all kinds of projects</li>
-                                </ul></div>
+                                <div
+                                    className={`2xl:mx-10 my-5 rounded-2xl flex justify-center w-full 2xl:w-auto shadow-md ${darkMode ? "bg-ltSecondaryDark/50" : "bg-ltSecondary/50"}`}
+                                >
+                                    <ul
+                                        className={`grid gap-x-10 justify-between xl:grid-cols-6 lg:grid-cols-3 grid-cols-2 list-disc px-20 py-2 my-2 rounded-2xl 
+                                    `}
+                                    >
+                                        <li>Design with 3d modeling</li>
+                                        <li>Material proprieties</li>
+                                        <li>Machining projects</li>
+                                        <li>Pneumatic systems</li>
+                                        <li>Electronics & Coding</li>
+                                        <li>And all kinds of projects</li>
+                                    </ul>
+                                </div>
                                 <p>
-                                    Things that I am interested in: CAD, Computer Graphics, 3D Printing, Machining, Robotics, Electronics, Coding and DIY projects.
+                                    Things that I am interested in: CAD,
+                                    Computer Graphics, 3D Printing, Machining,
+                                    Robotics, Electronics, Coding and DIY
+                                    projects.
                                 </p>
                                 <p>
                                     With all this said, I'm always looking
@@ -91,10 +109,18 @@ export default function AboutMe() {
                                 </p>
                             </div>
                         </div>
-                        <h2 className="text-xl font-oxanium-bold mb-2 mt-8">Things I have done/used (from little to a lot)</h2>
-                        <div className={`flex flex-row flex-wrap mt-5 justify-center gap-15 2xl:justify-between 2xl:mx-10 2xl:flex-nowrap`}>
+                        <h2 className="text-xl font-oxanium-bold mb-2 mt-8">
+                            Things I have done/used (from little to a lot)
+                        </h2>
+                        <div
+                            className={`flex flex-row flex-wrap mt-5 justify-center gap-15 2xl:justify-between 2xl:mx-10 2xl:flex-nowrap`}
+                        >
                             <div className="inset-0 mb-10">
-                                <p className={`pb-2 ${darkMode ? "border-b-2 border-dfSecondaryDark" : "border-b-2 border-black/30"}`}>Software</p>
+                                <p
+                                    className={`pb-2 ${darkMode ? "border-b-2 border-dfSecondaryDark" : "border-b-2 border-black/30"}`}
+                                >
+                                    Software
+                                </p>
                                 {Software.map((Software, i) => (
                                     <ul
                                         className={`
@@ -110,7 +136,7 @@ export default function AboutMe() {
                                         >
                                             {Software.name}
                                         </li>
-                                        <ProgressBar 
+                                        <ProgressBar
                                             barWidth={Software.Progress}
                                         />
                                     </ul>
@@ -118,7 +144,11 @@ export default function AboutMe() {
                             </div>
 
                             <div className="inset-0 mb-10">
-                                <p className={`pb-2 ${darkMode ? "border-b-2 border-dfSecondaryDark" : "border-b-2 border-black/30"}`}>General</p>
+                                <p
+                                    className={`pb-2 ${darkMode ? "border-b-2 border-dfSecondaryDark" : "border-b-2 border-black/30"}`}
+                                >
+                                    General
+                                </p>
                                 {General.map((General, i) => (
                                     <ul
                                         className={`
@@ -142,7 +172,11 @@ export default function AboutMe() {
                             </div>
 
                             <div className="inset-0 mb-10">
-                                <p className={`pb-2 ${darkMode ? "border-b-2 border-dfSecondaryDark" : "border-b-2 border-black/30"}`}>Coding</p>
+                                <p
+                                    className={`pb-2 ${darkMode ? "border-b-2 border-dfSecondaryDark" : "border-b-2 border-black/30"}`}
+                                >
+                                    Coding
+                                </p>
                                 {Coding.map((Coding, i) => (
                                     <ul
                                         className={`

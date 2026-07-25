@@ -32,6 +32,8 @@ import LinearPSU from "./ProjectsContent/Electrical/LinearPSU";
 import Pong from "./ProjectsContent/Coding/Pong";
 import ConstraintSolver from "./ProjectsContent/Coding/ConstraintSolver";
 import SpaceMouseMapper from "./ProjectsContent/Coding/SpaceMouseMapper";
+import ArrowClock from "./ProjectsContent/Coding/ArrowClock";
+import BresenhamLine from "./ProjectsContent/Coding/BresenhamLine";
 
 export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
@@ -78,7 +80,9 @@ export default function Projects() {
         "Graph",
         "Pong game",
         "Constraint Solver",
-        "Space Mouse Mapper"
+        "Space Mouse Mapper",
+        "Arrow Clock",
+        "Bresenham Line",
     ];
     const ElectricalProps = [
         "Linear Power Supply"
@@ -297,6 +301,14 @@ export default function Projects() {
                     <Divider />
                     <div id={`${makeId("Space Mouse Mapper")}`}>
                         <SpaceMouseMapper />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Arrow Clock")}`}>
+                        <ArrowClock />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Bresenham Line")}`}>
+                        <BresenhamLine />
                     </div>
                     <Divider />
                     <div id={`${makeId("Linear Power Supply")}`}>

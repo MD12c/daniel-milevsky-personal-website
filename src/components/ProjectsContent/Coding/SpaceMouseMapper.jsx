@@ -59,7 +59,7 @@ export default function SpaceMouseMapper() {
                     className={`underline underline-offset-1 ${
                         darkMode ? "text-ltPrimaryDark" : "text-dfPrimary"
                     }`}
-                    href="https://github.com/MD12c/space-mouse-mapper"
+                    href="https://github.com/MD12c/SpaceMouseMapper"
                 >
                     here
                 </a>

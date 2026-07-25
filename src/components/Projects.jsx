@@ -24,13 +24,13 @@ import Robot from "./ProjectsContent/Design/Robot";
 import Hand from "./ProjectsContent/Design/Hand";
 import ThisWebsite from "./ProjectsContent/Coding/ThisWebsite";
 import ImageToMachineCode from "./ProjectsContent/Coding/ImageToMachineCode";
-import CSVParser from "./ProjectsContent/Coding/CSVParser";
 import RobotControls from "./ProjectsContent/Coding/RobotControls";
 import Graph from "./ProjectsContent/Coding/Graph";
 import PlotterV2 from "./ProjectsContent/BigProjects/PlotterV2";
 import PlasticInjection from "./ProjectsContent/BigProjects/PlasticInjection";
 import LinearPSU from "./ProjectsContent/Electrical/LinearPSU";
 import Pong from "./ProjectsContent/Coding/Pong";
+import ConstraintSolver from "./ProjectsContent/Coding/ConstraintSolver";
 
 export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
@@ -52,8 +52,6 @@ export default function Projects() {
         "Hidden blade",
         "Nerf gun",
         "Combination Lock",
-        // "Blow dart tube",
-        // "Simple calculator",
     ];
     const MachiningProps = [
         "C clamp",
@@ -64,23 +62,21 @@ export default function Projects() {
         "Hole puncher",
     ];
     const DesignProps = [
-        // "Air engine",
         "Glider",
         "Glasses",
         "Bike frame",
         "Plotter",
         "Robot",
-        // "Storage tank",
         "Hand",
     ];
     const CodingProps = [
         "This website",
         "Image to machine code",
-        ".csv parser",
         "Robot controls",
         "Kali linux",
         "Graph",
         "Pong game",
+        "Constraint Solver",
     ];
     const ElectricalProps = [
         "Linear Power Supply"
@@ -277,10 +273,6 @@ export default function Projects() {
                         <ImageToMachineCode />
                     </div>
                     <Divider />
-                    <div id={`${makeId(".csv parser")}`}>
-                        <CSVParser />
-                    </div>
-                    <Divider />
                     <div id={`${makeId("Robot controls")}`}>
                         <RobotControls />
                     </div>
@@ -295,6 +287,10 @@ export default function Projects() {
                     <Divider />
                     <div id={`${makeId("Pong game")}`}>
                         <Pong />
+                    </div>
+                    <Divider />
+                    <div id={`${makeId("Constraint Solver")}`}>
+                        <ConstraintSolver />
                     </div>
                     <Divider />
                     <div id={`${makeId("Linear Power Supply")}`}>

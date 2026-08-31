@@ -34,6 +34,7 @@ import ConstraintSolver from "./ProjectsContent/Coding/ConstraintSolver";
 import SpaceMouseMapper from "./ProjectsContent/Coding/SpaceMouseMapper";
 import ArrowClock from "./ProjectsContent/Coding/ArrowClock";
 import BresenhamLine from "./ProjectsContent/Coding/BresenhamLine";
+import Engine from "./ProjectsContent/BigProjects/RenderingEngine";
 
 export default function Projects() {
     const { darkMode } = useContext(DarkModeContext);
@@ -49,7 +50,7 @@ export default function Projects() {
             : "bg-dfSecondary hover:bg-ltPrimary/30 active:bg-ltPrimary/60"
     }`;
 
-    const BigProps = ["Plotter 2V", "Plastic Injection", "OpenGL stuff"];
+    const BigProps = ["Plotter 2V", "Plastic Injection", "Rendering Engine"];
 
     const BeforeProps = [
         "Hidden blade",
@@ -150,15 +151,17 @@ export default function Projects() {
                             <div className={projectTabStyle + " md:w-80"}
                                 onClick={() => scrollToItem("PlotterV2")}
                             >
-                                Plotter V2
+                                {BigProps[0]}
                             </div>
                             <div className={projectTabStyle + " md:w-80"}
                                 onClick={() => scrollToItem("Plastic Injection")}
                             >
-                                Plastic Injection
+                                {BigProps[1]}
                             </div>
-                            <div className={projectTabStyle + " md:w-80"}>
-                                OpenGL stuff{!mobileMode && <br />} will be here
+                            <div className={projectTabStyle + " md:w-80"}
+                                onClick={() => scrollToItem("Engine")}
+                            >
+                                {BigProps[2]}
                             </div>
                         </div>
                         <h1 className="text-3xl font-oxanium-bold mb-2 mt-14">
@@ -215,6 +218,9 @@ export default function Projects() {
                         <PlotterV2 />
                     </div>
                     <Divider />
+                    <div id={`${makeId("Engine")}`}>
+                        <Engine />
+                    </div>
                     {/* <div id={`${makeId("Blow dart tube")}`}>
                         <BlowDartTube />
                     </div>

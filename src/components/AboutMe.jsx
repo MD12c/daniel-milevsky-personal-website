@@ -110,7 +110,7 @@ export default function AboutMe() {
                             </div>
                         </div>
                         <h2 className="text-xl font-oxanium-bold mb-2 mt-8">
-                            Things I have done/used (from little to a lot)
+                            Things I know/done/used
                         </h2>
                         <div
                             className={`flex flex-row flex-wrap mt-5 justify-center gap-15 2xl:justify-between 2xl:mx-10 2xl:flex-nowrap`}
